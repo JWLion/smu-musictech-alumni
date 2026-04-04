@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>상명대 뮤직테크놀로지 총동문회</title>
+<title>상명대학교 뮤직테크놀로지학과 총동문회</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -32,18 +32,16 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;
 .nav-text .top{color:rgba(255,255,255,0.4);font-size:10px;letter-spacing:1.5px;text-transform:uppercase}
 .nav-text .bot{color:#fff;font-size:13px;font-weight:700}
 .nav-text .bot span{color:var(--gold-l)}
-.nav-links{display:flex;gap:22px;align-items:center}
+.nav-links{display:flex;gap:20px;align-items:center}
 .nav-links a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:12.5px;font-weight:500;
-  letter-spacing:.3px;transition:color .2s;position:relative}
+  transition:color .2s;position:relative}
 .nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;right:0;height:1px;
   background:var(--gold-l);transform:scaleX(0);transform-origin:left;transition:transform .25s}
 .nav-links a:hover{color:#fff}
 .nav-links a:hover::after{transform:scaleX(1)}
 .nav-btn{background:linear-gradient(135deg,var(--gold),var(--gold-l));color:var(--navy)!important;
-  font-weight:700!important;padding:9px 20px;border-radius:8px;
-  box-shadow:0 4px 16px rgba(212,147,10,.3)!important;transition:transform .2s,box-shadow .2s!important}
+  font-weight:700!important;padding:9px 20px;border-radius:8px;box-shadow:0 4px 16px rgba(212,147,10,.3)!important}
 .nav-btn::after{display:none!important}
-.nav-btn:hover{transform:translateY(-1px)!important;box-shadow:0 8px 24px rgba(212,147,10,.4)!important}
 
 /* HERO */
 .hero{min-height:100vh;background:var(--navy);display:flex;align-items:center;
@@ -58,19 +56,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;
 .hero-mt-bg{position:absolute;right:-20px;top:50%;transform:translateY(-52%);
   font-family:'Bebas Neue',sans-serif;font-size:clamp(180px,26vw,360px);
   color:rgba(255,255,255,.025);line-height:1;pointer-events:none;letter-spacing:-6px;user-select:none}
-
-/* 30th anniversary banner */
 .anniv-banner{position:absolute;top:80px;right:0;
   background:linear-gradient(135deg,var(--gold),var(--gold-l));
   color:var(--navy);padding:10px 32px 10px 20px;border-radius:0 0 0 20px;
   font-family:'Bebas Neue',sans-serif;font-size:15px;letter-spacing:2px;
   box-shadow:0 4px 20px rgba(212,147,10,.4);z-index:2}
-.anniv-banner span{font-family:'Noto Sans KR',sans-serif;font-size:11px;font-weight:700;
-  display:block;letter-spacing:.5px;opacity:.8}
-
+.anniv-banner span{font-family:'Noto Sans KR',sans-serif;font-size:11px;font-weight:700;display:block;letter-spacing:.5px;opacity:.8}
 .hero-inner{position:relative;z-index:2;max-width:1200px;margin:0 auto;
   padding:80px 48px;display:grid;grid-template-columns:1fr 380px;gap:56px;align-items:center}
-
 .hero-eyebrow{display:inline-flex;align-items:center;gap:8px;
   background:rgba(212,147,10,.12);border:1px solid rgba(212,147,10,.3);
   color:var(--gold-l);font-size:11px;font-weight:700;letter-spacing:2.5px;
@@ -78,25 +71,12 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;
 .hero-eyebrow::before{content:'';width:6px;height:6px;background:var(--gold-l);
   border-radius:50%;animation:blink 1.8s ease-in-out infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
-
 .hero-mt-label{font-family:'Bebas Neue',sans-serif;font-size:clamp(30px,4.2vw,56px);
-  letter-spacing:5px;color:var(--gold-l);line-height:1;
-  text-shadow:0 0 40px rgba(240,180,41,.25)}
-.hero-mt-sub{font-size:12px;color:rgba(255,255,255,.32);letter-spacing:3px;
-  text-transform:uppercase;margin:8px 0 18px}
-.hero h1{font-family:'DM Serif Display',serif;font-size:clamp(34px,4.8vw,58px);
-  color:#fff;line-height:1.15;margin-bottom:20px}
+  letter-spacing:5px;color:var(--gold-l);line-height:1;text-shadow:0 0 40px rgba(240,180,41,.25)}
+.hero-mt-sub{font-size:12px;color:rgba(255,255,255,.32);letter-spacing:3px;text-transform:uppercase;margin:8px 0 18px}
+.hero h1{font-family:'DM Serif Display',serif;font-size:clamp(34px,4.8vw,58px);color:#fff;line-height:1.15;margin-bottom:20px}
 .hero h1 em{font-style:italic;color:var(--gold-l)}
-.hero-sub{color:rgba(255,255,255,.5);font-size:14.5px;line-height:1.9;margin-bottom:28px}
-
-.hero-timeline{display:flex;flex-direction:column;gap:9px;margin-bottom:36px;
-  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
-  border-radius:14px;padding:18px 20px}
-.ht-head{font-size:10px;color:rgba(255,255,255,.3);letter-spacing:2px;
-  text-transform:uppercase;margin-bottom:10px}
-.ht-item{display:flex;align-items:center;gap:10px;font-size:13px;color:rgba(255,255,255,.6)}
-.ht-dot{width:8px;height:8px;border-radius:50%;background:var(--gold-l);flex-shrink:0}
-.ht-item b{color:var(--gold-l)}
+.hero-sub{color:rgba(255,255,255,.5);font-size:14.5px;line-height:1.9;margin-bottom:36px}
 .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
 .btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-l));color:var(--navy);
   font-weight:700;font-size:14px;padding:14px 26px;border-radius:10px;text-decoration:none;
@@ -107,7 +87,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;
   font-size:14px;font-weight:500;padding:14px 26px;border-radius:10px;text-decoration:none;
   transition:border-color .2s,background .2s}
 .btn-ghost:hover{border-color:rgba(255,255,255,.5);background:rgba(255,255,255,.05)}
-
 .hero-cards{display:flex;flex-direction:column;gap:11px}
 .hcard{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
   border-radius:16px;padding:20px 22px;transition:background .2s}
@@ -119,16 +98,12 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;
 .hcard-val span{color:var(--gold-l)}
 .hcard-desc{font-size:12px;color:rgba(255,255,255,.4);margin-top:4px;line-height:1.6}
 
-/* SECTIONS */
 section{padding:92px 48px}
 .inner{max-width:1200px;margin:0 auto}
-.sec-tag{display:inline-block;color:var(--accent);font-size:11px;font-weight:700;
-  letter-spacing:2.5px;text-transform:uppercase;margin-bottom:10px}
-.sec-title{font-family:'DM Serif Display',serif;font-size:clamp(26px,3.5vw,42px);
-  color:var(--navy);line-height:1.2;margin-bottom:12px}
+.sec-tag{display:inline-block;color:var(--accent);font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:10px}
+.sec-title{font-family:'DM Serif Display',serif;font-size:clamp(26px,3.5vw,42px);color:var(--navy);line-height:1.2;margin-bottom:12px}
 .sec-sub{color:var(--gray);font-size:15px;line-height:1.85;max-width:540px;margin-bottom:48px}
-.divider{width:44px;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-l));
-  border-radius:2px;margin:12px 0 16px}
+.divider{width:44px;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-l));border-radius:2px;margin:12px 0 16px}
 
 /* GREETING */
 .greeting{background:var(--cream)}
@@ -140,350 +115,324 @@ section{padding:92px 48px}
 .greeting-sign .role{font-size:11px;color:var(--gray);letter-spacing:1px;text-transform:uppercase;margin-bottom:5px}
 .greeting-sign .name{font-size:22px;font-weight:900;color:var(--navy)}
 .greeting-sign .org{font-size:13px;color:var(--accent);margin-top:3px}
-.greeting-sign .name span{font-size:14px;font-weight:400;color:var(--gray);margin-left:8px}
 
-/* Org box */
-.org-box{background:#fff;border-radius:20px;padding:30px 26px;
-  border:1px solid var(--border);box-shadow:0 4px 24px rgba(0,0,0,.06)}
-.org-box-title{font-size:13px;font-weight:700;color:var(--navy);
-  letter-spacing:.8px;margin-bottom:22px;text-align:center;padding-bottom:14px;
-  border-bottom:1px solid var(--border)}
-.org-chart{display:flex;flex-direction:column;align-items:center}
-.org-top-row{display:flex;gap:8px;justify-content:center;margin-bottom:0}
-.org-node-main{background:linear-gradient(135deg,var(--navy),var(--mid));
-  color:#fff;border-radius:12px;padding:13px 20px;text-align:center;font-size:12px;font-weight:700}
-.org-node-main .r{font-size:10px;color:rgba(255,255,255,.5);margin-bottom:2px;letter-spacing:.5px}
-.org-node-main .n{font-size:14px}
-.org-node-main.vp{background:linear-gradient(135deg,#1E4080,#2A7FBF)}
-.org-vline{width:2px;height:18px;background:var(--gold);margin:0 auto}
-.org-hline-wrap{width:100%;display:flex;flex-direction:column;align-items:center}
-.org-mid{font-size:12px;font-weight:700;color:var(--navy);background:var(--lgray);
-  border:1px solid var(--border);border-radius:10px;padding:10px 16px;margin:0 auto;text-align:center}
-.org-mid .r{font-size:10px;color:var(--gray);margin-bottom:1px}
-.org-dept-row{display:flex;gap:6px;justify-content:center;margin-top:0;flex-wrap:wrap}
-.org-dept{background:var(--cream);border:1px solid var(--border);border-radius:9px;
-  padding:9px 11px;text-align:center;font-size:11px;font-weight:700;color:var(--navy);min-width:68px}
-.org-dept .sub{font-size:9px;color:var(--gray);font-weight:400;margin-top:2px}
-.org-advisor-row{display:flex;gap:6px;justify-content:center;margin-top:12px;flex-wrap:wrap}
-.org-advisor{background:rgba(212,147,10,.07);border:1px solid rgba(212,147,10,.2);
-  border-radius:8px;padding:7px 12px;text-align:center;font-size:10.5px;color:var(--gold);font-weight:700}
+/* ORG */
+.org-box{background:#fff;border-radius:20px;padding:28px 22px;border:1px solid var(--border);box-shadow:0 4px 24px rgba(0,0,0,.06)}
+.org-box-title{font-size:13px;font-weight:700;color:var(--navy);letter-spacing:.8px;margin-bottom:18px;text-align:center;padding-bottom:12px;border-bottom:1px solid var(--border)}
+.org-chart{display:flex;flex-direction:column;align-items:center;gap:0}
+.org-vline{width:2px;height:14px;background:var(--gold);margin:0 auto}
 
-/* STUDENT */
-.student{background:linear-gradient(135deg,var(--navy) 0%,var(--blue) 100%)}
-.student .sec-title{color:#fff}
-.student .sec-tag{color:var(--gold-l)}
-.student .sec-sub{color:rgba(255,255,255,.45)}
-.student-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
-.stcard{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
-  border-radius:18px;padding:28px 22px;transition:background .2s,transform .2s;position:relative;overflow:hidden}
-.stcard::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;
-  background:linear-gradient(90deg,var(--gold),var(--gold-l))}
-.stcard:hover{background:rgba(255,255,255,.09);transform:translateY(-3px)}
-.stcard-icon{font-size:30px;margin-bottom:14px}
-.stcard-title{font-size:15px;font-weight:700;color:#fff;margin-bottom:8px}
-.stcard-desc{font-size:13px;color:rgba(255,255,255,.5);line-height:1.7}
-.stcard-tag{display:inline-block;margin-top:12px;background:rgba(212,147,10,.15);
-  border:1px solid rgba(212,147,10,.35);color:var(--gold-l);
-  font-size:11px;font-weight:700;padding:3px 11px;border-radius:100px}
-.student-cta{margin-top:36px;text-align:center;
-  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
-  border-radius:16px;padding:24px 32px;display:flex;align-items:center;
-  justify-content:space-between;flex-wrap:wrap;gap:16px}
-.student-cta-text{font-size:15px;color:rgba(255,255,255,.75);font-weight:500}
-.student-cta-text strong{color:#fff;display:block;font-size:17px;margin-bottom:4px}
+/* 회장 - 크게 */
+.org-president{background:linear-gradient(135deg,var(--navy),var(--mid));color:#fff;border-radius:12px;padding:13px 24px;text-align:center;width:160px}
+.org-president .r{font-size:10px;color:rgba(255,255,255,.5);margin-bottom:2px;letter-spacing:.5px}
+.org-president .n{font-size:16px;font-weight:700}
 
-/* BENEFITS */
-.benefits{background:#fff}
-.benefits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.bcard{background:var(--cream);border-radius:18px;padding:30px 24px;
-  border:1px solid var(--border);transition:transform .25s,box-shadow .25s;position:relative;overflow:hidden}
-.bcard::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;
-  background:linear-gradient(90deg,var(--accent),var(--gold-l));
-  transform:scaleX(0);transform-origin:left;transition:transform .3s}
-.bcard:hover{transform:translateY(-5px);box-shadow:0 20px 50px rgba(0,0,0,.08)}
-.bcard:hover::after{transform:scaleX(1)}
-.bcard.special{background:linear-gradient(135deg,rgba(21,45,82,.04),rgba(42,127,191,.06));
-  border-color:rgba(42,127,191,.2)}
-.bcard-icon{font-size:26px;margin-bottom:14px}
-.bcard-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:7px}
-.bcard-desc{font-size:13px;color:var(--gray);line-height:1.75}
+/* 부회장 - 작게 */
+.org-vp{background:rgba(30,64,128,.12);border:1.5px solid rgba(42,127,191,.25);color:var(--mid);border-radius:9px;padding:9px 18px;text-align:center;width:140px}
+.org-vp .r{font-size:9.5px;color:var(--gray);margin-bottom:1px;letter-spacing:.5px}
+.org-vp .n{font-size:13px;font-weight:700}
 
-/* REVENUE */
-.revenue{background:var(--cream)}
-.rev-intro{background:#fff;border-radius:16px;padding:24px 28px;
-  border:1px solid var(--border);margin-bottom:32px;
-  display:flex;align-items:flex-start;gap:16px}
-.rev-intro-icon{font-size:28px;flex-shrink:0;margin-top:2px}
-.rev-intro-text{font-size:14px;color:var(--gray);line-height:1.8}
-.rev-intro-text strong{color:var(--navy)}
-.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.rev-card{background:#fff;border-radius:16px;padding:24px 22px;
-  border:1px solid var(--border);transition:box-shadow .2s,transform .2s}
-.rev-card:hover{box-shadow:0 8px 30px rgba(0,0,0,.08);transform:translateY(-2px)}
-.rev-head{display:flex;align-items:center;gap:10px;margin-bottom:12px}
-.rev-icon{font-size:24px}
-.rev-name{font-size:14px;font-weight:700;color:var(--navy)}
-.rev-tag{font-size:10px;font-weight:700;letter-spacing:1px;
-  padding:2px 9px;border-radius:100px;display:inline-block;margin-top:3px}
-.tag-now{background:rgba(39,174,96,.1);border:1px solid rgba(39,174,96,.25);color:var(--green-l)}
-.tag-mid{background:rgba(212,147,10,.1);border:1px solid rgba(212,147,10,.25);color:var(--gold)}
-.tag-later{background:rgba(42,127,191,.1);border:1px solid rgba(42,127,191,.25);color:var(--accent)}
-.rev-items{list-style:none}
-.rev-items li{font-size:12.5px;color:var(--gray);padding:4px 0;
-  border-bottom:1px solid var(--border);display:flex;align-items:flex-start;gap:7px;line-height:1.55}
-.rev-items li:last-child{border-bottom:none}
-.rev-items li::before{content:'›';color:var(--gold);font-weight:700;flex-shrink:0}
+/* 사무국장 */
+.org-sec{font-size:11px;font-weight:700;color:var(--navy);background:var(--lgray);border:1px solid var(--border);border-radius:9px;padding:9px 14px;margin:0 auto;text-align:center;width:200px}
+.org-sec .r{font-size:9.5px;color:var(--gray);margin-bottom:1px}
+.org-sec .members{font-size:9.5px;color:var(--gray);font-weight:400;margin-top:3px}
 
-/* FUND — 발전기금 */
-.fund{background:var(--navy);padding:60px 48px}
-.fund-inner{max-width:1200px;margin:0 auto}
-.fund-wrap{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);
-  border-radius:22px;padding:44px 48px;
-  display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center}
-.fund-tag{color:var(--gold-l);font-size:11px;font-weight:700;letter-spacing:2.5px;
-  text-transform:uppercase;margin-bottom:10px}
-.fund-title{font-family:'DM Serif Display',serif;font-size:clamp(22px,3vw,34px);
-  color:#fff;margin-bottom:14px;line-height:1.25}
-.fund-desc{font-size:14px;color:rgba(255,255,255,.5);line-height:1.85;max-width:480px;margin-bottom:24px}
-.fund-tiers{display:flex;gap:10px;flex-wrap:wrap}
-.fund-tier{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);
-  border-radius:12px;padding:14px 18px;min-width:120px}
-.fund-tier.hero-tier{background:rgba(212,147,10,.12);border-color:rgba(212,147,10,.35)}
-.fund-tier-name{font-size:11px;color:rgba(255,255,255,.45);font-weight:700;
-  letter-spacing:.8px;text-transform:uppercase;margin-bottom:5px}
-.fund-tier.hero-tier .fund-tier-name{color:var(--gold-l)}
-.fund-tier-amount{font-family:'Bebas Neue',sans-serif;font-size:24px;color:#fff;line-height:1}
-.fund-tier.hero-tier .fund-tier-amount{color:var(--gold-l)}
-.fund-tier-desc{font-size:11px;color:rgba(255,255,255,.3);margin-top:3px}
-.fund-cta{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;flex-shrink:0}
-.fund-cta .btn-fund{background:linear-gradient(135deg,var(--gold),var(--gold-l));
-  color:var(--navy);font-weight:700;font-size:14px;padding:14px 28px;
-  border-radius:10px;text-decoration:none;box-shadow:0 4px 20px rgba(212,147,10,.35);
-  transition:transform .2s,box-shadow .2s;white-space:nowrap}
-.fund-cta .btn-fund:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(212,147,10,.45)}
-.fund-cta-note{font-size:11px;color:rgba(255,255,255,.3)}
+.org-dept-row{display:flex;gap:5px;justify-content:center;flex-wrap:wrap}
+.org-dept{background:var(--cream);border:1px solid var(--border);border-radius:8px;padding:7px 9px;text-align:center;font-size:11px;font-weight:700;color:var(--navy);min-width:58px}
+.org-dept .sub{font-size:9px;color:var(--gray);font-weight:400;margin-top:1px}
+.org-advisor-row{display:flex;gap:6px;justify-content:center;margin-top:10px;flex-wrap:wrap}
+.org-advisor{background:rgba(212,147,10,.07);border:1px solid rgba(212,147,10,.2);border-radius:7px;padding:6px 10px;text-align:center;font-size:10px;color:var(--gold);font-weight:700;line-height:1.4}
 
-/* PLAN */
-.plan{background:#fff}
-.plan-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;
-  border-radius:20px;overflow:hidden;border:1px solid var(--border);margin-top:48px}
-.plan-col{padding:26px 18px;border-right:1px solid var(--border)}
-.plan-col:last-child{border-right:none}
-.plan-col.now{background:var(--navy)}
-.plan-yr{font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:2px;
-  color:var(--gold);margin-bottom:3px}
-.plan-col.now .plan-yr{color:var(--gold-l)}
-.plan-phase{font-size:12.5px;font-weight:700;color:var(--navy);margin-bottom:10px;line-height:1.4}
-.plan-col.now .plan-phase{color:#fff}
-.plan-list{list-style:none}
-.plan-list li{font-size:11px;color:var(--gray);padding:3.5px 0;
-  border-bottom:1px solid rgba(0,0,0,.05);display:flex;align-items:flex-start;gap:5px;line-height:1.5}
-.plan-col.now .plan-list li{color:rgba(255,255,255,.52);border-color:rgba(255,255,255,.07)}
-.plan-list li:last-child{border-bottom:none}
-.plan-list li::before{content:'·';color:var(--gold);font-weight:700;flex-shrink:0}
-.plan-col.now .plan-list li::before{color:var(--gold-l)}
-.plan-kpi{margin-top:14px;padding:9px 11px;background:rgba(212,147,10,.08);
-  border-radius:8px;font-size:10.5px;color:var(--gold);font-weight:700;line-height:1.5}
-.plan-col.now .plan-kpi{background:rgba(212,147,10,.15);color:var(--gold-l)}
-
-/* PROGRAMS */
-.programs{background:var(--cream)}
-.prog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
-.pcard{background:#fff;border-radius:16px;padding:26px 22px;border:1px solid var(--border);
-  transition:transform .25s,box-shadow .25s,border-color .25s}
-.pcard:hover{transform:translateY(-3px);box-shadow:0 14px 44px rgba(0,0,0,.08);
-  border-color:rgba(212,147,10,.3)}
-.pcard-icon{font-size:28px;margin-bottom:12px}
-.pcard-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:7px}
-.pcard-desc{font-size:12.5px;color:var(--gray);line-height:1.7;margin-bottom:12px}
-.pcard-tag{display:inline-block;font-size:10.5px;font-weight:700;
-  padding:3px 10px;border-radius:100px}
+/* HISTORY */
+.history{background:#fff}
+.timeline{position:relative;margin-top:44px}
+.timeline::before{content:'';position:absolute;left:24px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--gold),var(--accent));border-radius:1px}
+.tl-item{display:flex;gap:28px;margin-bottom:24px;position:relative}
+.tl-dot{width:50px;height:50px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-l));display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:10px;color:var(--navy);flex-shrink:0;position:relative;z-index:1;letter-spacing:.5px;text-align:center;line-height:1.2}
+.tl-body{background:var(--cream);border:1px solid var(--border);border-radius:14px;padding:16px 20px;flex:1;transition:box-shadow .2s}
+.tl-body:hover{box-shadow:0 6px 22px rgba(0,0,0,.07)}
+.tl-date{font-size:11px;color:var(--accent);font-weight:700;letter-spacing:1px;margin-bottom:4px}
+.tl-title{font-size:14px;font-weight:700;color:var(--navy)}
 
 /* MEMBERSHIP */
-.membership{background:#fff}
-.tiers{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:44px}
-.tier{border-radius:18px;padding:28px 18px;border:2px solid var(--border);
-  transition:transform .25s;position:relative}
+.membership{background:var(--cream)}
+.fee-intro{background:#fff;border-radius:14px;padding:22px 26px;border:1px solid var(--border);margin-bottom:24px;font-size:14px;color:var(--gray);line-height:1.8}
+.fee-intro strong{color:var(--navy)}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px}
+.tier{border-radius:18px;padding:26px 18px;border:2px solid var(--border);transition:transform .25s;position:relative}
 .tier:hover{transform:translateY(-3px)}
-.tier.best{background:var(--navy);border-color:var(--gold);
-  box-shadow:0 8px 36px rgba(212,147,10,.2)}
-.tier.student-tier{background:linear-gradient(135deg,rgba(21,45,82,.04),rgba(39,174,96,.05));
-  border-color:rgba(39,174,96,.25)}
-.tier-badge{position:absolute;top:-11px;left:50%;transform:translateX(-50%);
-  background:linear-gradient(135deg,var(--gold),var(--gold-l));color:var(--navy);
-  font-size:10px;font-weight:700;padding:3px 12px;border-radius:100px;white-space:nowrap}
-.tier-badge.green{background:linear-gradient(135deg,var(--green),var(--green-l));color:#fff}
-.tier-icon{font-size:26px;margin-bottom:10px}
-.tier-name{font-size:14px;font-weight:700;margin-bottom:4px}
+.tier.best{background:var(--navy);border-color:var(--gold);box-shadow:0 8px 36px rgba(212,147,10,.2)}
+.tier-badge{position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--gold),var(--gold-l));color:var(--navy);font-size:10px;font-weight:700;padding:3px 12px;border-radius:100px;white-space:nowrap}
+.tier-icon{font-size:22px;margin-bottom:9px}
+.tier-name{font-size:14px;font-weight:700;margin-bottom:3px}
 .tier.best .tier-name{color:var(--gold-l)}
-.tier.student-tier .tier-name{color:var(--green)}
-.tier-price{font-family:'Bebas Neue',sans-serif;font-size:30px;color:var(--accent);
-  line-height:1;margin-bottom:2px}
+.tier-price{font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--accent);line-height:1;margin-bottom:2px}
 .tier.best .tier-price{color:var(--gold-l)}
-.tier.student-tier .tier-price{color:var(--green-l)}
-.tier-period{font-size:10.5px;color:var(--gray);margin-bottom:16px}
+.tier-period{font-size:10px;color:var(--gray);margin-bottom:13px}
 .tier.best .tier-period{color:rgba(255,255,255,.4)}
 .tier-list{list-style:none}
-.tier-list li{font-size:11.5px;color:var(--gray);padding:4.5px 0;
-  border-bottom:1px solid rgba(0,0,0,.05);display:flex;align-items:flex-start;gap:6px;line-height:1.5}
+.tier-list li{font-size:11.5px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(0,0,0,.05);display:flex;align-items:flex-start;gap:6px;line-height:1.5}
 .tier.best .tier-list li{color:rgba(255,255,255,.6);border-color:rgba(255,255,255,.07)}
 .tier-list li:last-child{border-bottom:none}
 .tier-list li::before{content:'✓';color:var(--accent);font-weight:700;flex-shrink:0;font-size:11px}
 .tier.best .tier-list li::before{color:var(--gold-l)}
-.tier.student-tier .tier-list li::before{color:var(--green-l)}
+.fee-pay{background:#fff;border-radius:14px;padding:22px 26px;border:1px solid var(--border)}
+.fee-pay-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:12px}
+.fee-pay-row{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--gray);margin-bottom:7px;flex-wrap:wrap}
+.fee-pay-row .lbl{font-weight:700;color:var(--navy);min-width:76px}
+.fee-pay-row .val{background:var(--lgray);padding:5px 13px;border-radius:7px;font-size:12.5px}
+.fee-note{font-size:12.5px;color:var(--gray);margin-top:10px;line-height:1.7;padding:12px 16px;background:rgba(212,147,10,.06);border-radius:9px;border-left:3px solid var(--gold)}
+
+/* BENEFITS */
+.benefits{background:#fff}
+.benefits-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.bcard{background:var(--cream);border-radius:16px;padding:28px 22px;border:1px solid var(--border);transition:transform .25s,box-shadow .25s;position:relative;overflow:hidden}
+.bcard::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--gold-l));transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.bcard:hover{transform:translateY(-4px);box-shadow:0 16px 44px rgba(0,0,0,.08)}
+.bcard:hover::after{transform:scaleX(1)}
+.bcard-icon{font-size:24px;margin-bottom:12px}
+.bcard-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:6px}
+.bcard-desc{font-size:13px;color:var(--gray);line-height:1.75}
+
+/* ACTIVITY */
+.activity{background:var(--cream)}
+.act-section{margin-bottom:52px}
+.act-section:last-child{margin-bottom:0}
+.act-title{font-size:19px;font-weight:700;color:var(--navy);margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.act-desc{font-size:13.5px;color:var(--gray);margin-bottom:20px;line-height:1.7}
+
+/* 동문기업 미리보기 카드 */
+.biz-preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.biz-preview{background:#fff;border-radius:14px;padding:20px 18px;border:1px solid var(--border);
+  cursor:pointer;transition:box-shadow .2s,transform .2s,border-color .2s;position:relative;overflow:hidden}
+.biz-preview::after{content:'자세히 보기 →';position:absolute;bottom:14px;right:16px;
+  font-size:11px;color:var(--accent);font-weight:700;opacity:0;transition:opacity .2s}
+.biz-preview:hover{box-shadow:0 8px 28px rgba(0,0,0,.1);transform:translateY(-2px);border-color:rgba(42,127,191,.3)}
+.biz-preview:hover::after{opacity:1}
+.biz-num{font-family:'Bebas Neue',sans-serif;font-size:28px;color:rgba(212,147,10,.2);line-height:1;margin-bottom:4px}
+.biz-pname{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.biz-ptype{font-size:12px;color:var(--gray);margin-bottom:8px}
+.biz-pbadge{display:inline-block;background:rgba(39,174,96,.08);border:1px solid rgba(39,174,96,.2);color:var(--green);font-size:11px;font-weight:700;padding:3px 9px;border-radius:5px}
+
+/* 모달 */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:500;
+  display:flex;align-items:center;justify-content:center;padding:20px;
+  opacity:0;pointer-events:none;transition:opacity .25s;backdrop-filter:blur(4px)}
+.modal-overlay.open{opacity:1;pointer-events:all}
+.modal{background:#fff;border-radius:20px;padding:36px;max-width:560px;width:100%;
+  transform:translateY(20px);transition:transform .25s;max-height:90vh;overflow-y:auto}
+.modal-overlay.open .modal{transform:translateY(0)}
+.modal-close{float:right;background:var(--lgray);border:none;border-radius:50%;width:32px;height:32px;
+  font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;
+  color:var(--gray);transition:background .2s}
+.modal-close:hover{background:var(--border)}
+.modal h2{font-size:20px;font-weight:700;color:var(--navy);margin-bottom:4px;margin-top:4px}
+.modal-tag{font-size:11px;color:var(--accent);font-weight:700;letter-spacing:1px;margin-bottom:16px;display:block}
+.modal-divider{height:1px;background:var(--border);margin:16px 0}
+.modal-row{display:flex;gap:8px;align-items:flex-start;margin-bottom:9px;font-size:13.5px}
+.modal-row .ml{font-weight:700;color:var(--navy);min-width:68px;flex-shrink:0}
+.modal-row .mv{color:var(--gray);line-height:1.6}
+.modal-benefit{background:rgba(39,174,96,.08);border:1px solid rgba(39,174,96,.2);border-radius:9px;padding:12px 16px;margin-top:12px}
+.modal-benefit .mb-label{font-size:11px;font-weight:700;color:var(--green);margin-bottom:4px;letter-spacing:.5px}
+.modal-benefit .mb-val{font-size:13.5px;color:var(--navy);font-weight:600;line-height:1.6}
+
+/* 활동 탭 */
+.act-tabs{display:flex;gap:0;margin-bottom:28px;border-radius:12px;overflow:hidden;border:1px solid var(--border);background:var(--lgray)}
+.act-tab{flex:1;padding:12px;text-align:center;font-size:13px;font-weight:700;color:var(--gray);cursor:pointer;transition:all .2s;border:none;background:none;font-family:'Noto Sans KR',sans-serif}
+.act-tab.active{background:#fff;color:var(--navy);box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.act-tab-content{display:none}
+.act-tab-content.active{display:block;animation:fadeUp .3s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+/* 폼 스타일 (활동 섹션 내) */
+.inner-form{background:#fff;border-radius:16px;padding:28px;border:1px solid var(--border)}
+.inner-form h3{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:6px}
+.inner-form p{font-size:13px;color:var(--gray);line-height:1.7;margin-bottom:20px}
+.if-row{margin-bottom:16px}
+.if-row-2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+.if-label{display:block;font-size:11px;font-weight:700;color:var(--navy);letter-spacing:.5px;text-transform:uppercase;margin-bottom:6px}
+.if-label .req{color:var(--gold);margin-left:2px}
+.if-label .opt{color:var(--gray);font-weight:400;font-size:10px;text-transform:none;letter-spacing:0;margin-left:3px}
+.if-input{width:100%;background:var(--lgray);border:1.5px solid var(--border);border-radius:9px;
+  padding:10px 14px;color:var(--navy);font-size:13px;font-family:'Noto Sans KR',sans-serif;
+  transition:border-color .2s,background .2s;outline:none}
+.if-input:focus{border-color:var(--accent);background:#fff}
+.if-input::placeholder{color:var(--gray)}
+.if-textarea{resize:vertical;min-height:80px;line-height:1.65}
+.if-select{cursor:pointer}
+.check-pills{display:flex;flex-wrap:wrap;gap:7px}
+.check-pill{position:relative}
+.check-pill input{position:absolute;opacity:0;width:0;height:0}
+.check-pill label{display:inline-flex;align-items:center;background:var(--lgray);border:1.5px solid var(--border);border-radius:7px;padding:6px 12px;font-size:12px;color:var(--gray);font-weight:500;cursor:pointer;transition:all .2s}
+.check-pill input:checked+label{background:rgba(42,127,191,.1);border-color:rgba(42,127,191,.4);color:var(--accent)}
+.if-btn{background:linear-gradient(135deg,var(--navy),var(--mid));color:#fff;font-weight:700;font-size:13px;padding:12px 28px;border-radius:9px;border:none;cursor:pointer;font-family:'Noto Sans KR',sans-serif;transition:opacity .2s;margin-top:4px}
+.if-btn:hover{opacity:.85}
+.if-btn.green{background:linear-gradient(135deg,var(--green),var(--green-l))}
+.if-success{display:none;background:rgba(39,174,96,.08);border:1px solid rgba(39,174,96,.25);border-radius:10px;padding:16px 20px;text-align:center;font-size:14px;color:var(--green);font-weight:700;margin-top:16px}
+.if-success.show{display:block}
+
+/* 구인구직 게시판 */
+.job-board{background:#fff;border-radius:16px;border:1px solid var(--border);overflow:hidden}
+.job-board-header{background:var(--navy);padding:16px 22px;display:flex;align-items:center;justify-content:space-between}
+.job-board-header h4{color:#fff;font-size:15px;font-weight:700}
+.job-post-btn{background:linear-gradient(135deg,var(--gold),var(--gold-l));color:var(--navy);font-size:12px;font-weight:700;padding:7px 16px;border-radius:7px;border:none;cursor:pointer;font-family:'Noto Sans KR',sans-serif;transition:opacity .2s}
+.job-post-btn:hover{opacity:.85}
+.job-list{padding:0}
+.job-item{padding:18px 22px;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;gap:14px;cursor:pointer;transition:background .2s}
+.job-item:hover{background:var(--cream)}
+.job-item:last-child{border-bottom:none}
+.job-badge{font-size:10px;font-weight:700;padding:3px 9px;border-radius:5px;flex-shrink:0;margin-top:2px}
+.badge-hire{background:rgba(42,127,191,.1);color:var(--accent);border:1px solid rgba(42,127,191,.25)}
+.badge-seek{background:rgba(212,147,10,.1);color:var(--gold);border:1px solid rgba(212,147,10,.25)}
+.badge-collab{background:rgba(39,174,96,.1);color:var(--green);border:1px solid rgba(39,174,96,.25)}
+.job-info{}
+.job-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:3px}
+.job-meta{font-size:12px;color:var(--gray)}
+.job-post-form{padding:22px;border-top:2px solid var(--border);background:var(--cream);display:none}
+.job-post-form.open{display:block;animation:fadeUp .3s ease}
+.job-post-form h4{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:16px}
 
 /* NEWS */
-.news{background:var(--cream)}
-.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
-.ncard{background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--border);
-  transition:box-shadow .25s,transform .25s}
-.ncard:hover{box-shadow:0 12px 36px rgba(0,0,0,.09);transform:translateY(-3px)}
-.nthumb{height:130px;display:flex;align-items:center;justify-content:center;font-size:38px}
-.nt1{background:linear-gradient(135deg,#152D52,#2A7FBF)}
-.nt2{background:linear-gradient(135deg,#1a4731,#3BAA6B)}
-.nt3{background:linear-gradient(135deg,#6b3a10,#D4930A)}
-.nbody{padding:18px 16px}
-.ncat{font-size:10px;font-weight:700;color:var(--accent);letter-spacing:1.8px;
-  text-transform:uppercase;margin-bottom:6px}
-.ntitle{font-size:13.5px;font-weight:700;color:var(--navy);margin-bottom:6px;line-height:1.5}
-.ndate{font-size:11px;color:var(--gray)}
+.news{background:#fff}
+.news-layout{display:grid;grid-template-columns:1fr 340px;gap:28px;margin-top:44px}
+/* 공지사항 게시판 */
+.notice-board{background:var(--cream);border-radius:16px;overflow:hidden;border:1px solid var(--border)}
+.notice-board-header{background:var(--navy);padding:14px 22px;display:flex;align-items:center;justify-content:space-between}
+.notice-board-header h3{color:#fff;font-size:15px;font-weight:700}
+.notice-board-header span{font-size:11px;color:rgba(255,255,255,.4)}
+.notice-item{display:flex;align-items:flex-start;gap:12px;padding:14px 22px;border-bottom:1px solid var(--border);cursor:pointer;transition:background .2s}
+.notice-item:hover{background:#fff}
+.notice-item:last-child{border-bottom:none}
+.notice-badge{font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px}
+.nbadge-fixed{background:rgba(212,147,10,.1);color:var(--gold);border:1px solid rgba(212,147,10,.25)}
+.nbadge-notice{background:rgba(42,127,191,.1);color:var(--accent);border:1px solid rgba(42,127,191,.25)}
+.nbadge-event{background:rgba(39,174,96,.1);color:var(--green);border:1px solid rgba(39,174,96,.25)}
+.notice-body{}
+.notice-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:3px;line-height:1.4}
+.notice-meta{font-size:11.5px;color:var(--gray)}
+/* 공지 상세 모달 */
+.notice-detail{display:none;padding:20px 22px;background:#fff;border-top:2px solid var(--gold);animation:fadeUp .25s ease}
+.notice-detail.open{display:block}
+.notice-detail-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.notice-detail-body{font-size:13.5px;color:var(--gray);line-height:1.9}
+.notice-detail-body strong{color:var(--navy)}
+.notice-detail-body .mail-link{color:var(--accent);font-weight:700;text-decoration:none}
+.notice-detail-body .mail-link:hover{text-decoration:underline}
+.notice-detail-body ul{list-style:none;margin:10px 0}
+.notice-detail-body ul li{padding:4px 0;display:flex;align-items:flex-start;gap:7px;border-bottom:1px solid var(--border);font-size:13px}
+.notice-detail-body ul li:last-child{border-bottom:none}
+.notice-detail-body ul li::before{content:'›';color:var(--gold);font-weight:700;flex-shrink:0}
+.notice-step{background:var(--lgray);border-radius:9px;padding:12px 16px;margin:10px 0;font-size:13px;line-height:1.8}
+.notice-step .step-num{font-family:'Bebas Neue',sans-serif;font-size:20px;color:var(--gold);margin-right:6px}
+
+/* 우측 패널 */
+.news-side{display:flex;flex-direction:column;gap:16px}
+/* 카테고리 카드들 */
+.ncat-card{background:var(--cream);border-radius:12px;padding:14px 16px;border:1px solid var(--border);transition:box-shadow .2s,transform .2s;cursor:pointer}
+.ncat-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.08);transform:translateY(-1px)}
+.ncat-card-inner{display:flex;align-items:center;gap:10px}
+.ncat-icon{font-size:20px;flex-shrink:0}
+.ncat-info{}
+.ncat-title{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:2px}
+.ncat-desc{font-size:11.5px;color:var(--gray);line-height:1.5}
+/* 갤러리 프리뷰 */
+.gallery-preview{background:var(--cream);border-radius:12px;padding:16px;border:1px solid var(--border)}
+.gallery-preview h4{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.gallery-thumb{background:linear-gradient(135deg,var(--navy),var(--mid));border-radius:7px;aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:18px;color:rgba(255,255,255,.3)}
+.gallery-empty{font-size:11px;color:var(--gray);text-align:center;padding:8px 0;grid-column:1/-1}
+/* 제보 안내 */
+.news-submit{background:linear-gradient(135deg,rgba(11,24,41,.04),rgba(42,127,191,.06));border:1px solid rgba(42,127,191,.2);border-radius:12px;padding:16px}
+.news-submit h4{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:6px}
+.news-submit p{font-size:12px;color:var(--gray);line-height:1.7;margin-bottom:10px}
+.news-submit a{display:block;background:var(--navy);color:var(--gold-l);font-size:12px;font-weight:700;padding:9px 14px;border-radius:8px;text-decoration:none;text-align:center;transition:opacity .2s}
+.news-submit a:hover{opacity:.85}
 
 /* FORM */
 .form-section{background:var(--navy);padding:76px 48px}
-.form-wrap{max-width:760px;margin:0 auto}
-.form-header{text-align:center;margin-bottom:44px}
+.form-wrap{max-width:720px;margin:0 auto}
+.form-header{text-align:center;margin-bottom:40px}
 .form-header .sec-tag{color:var(--gold-l)}
 .form-header .sec-title{color:#fff}
 .form-header .sec-sub{color:rgba(255,255,255,.42);margin:0 auto;text-align:center}
-.gform{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
-  border-radius:20px;padding:40px 36px}
-.form-progress{display:flex;gap:5px;margin-bottom:32px;align-items:center;justify-content:center}
+.gform{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:36px 32px}
+.form-progress{display:flex;gap:5px;margin-bottom:28px;align-items:center;justify-content:center}
 .fp-step{display:flex;flex-direction:column;align-items:center;gap:4px;flex:1}
-.fp-dot{width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.06);
-  border:2px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;
-  font-size:11px;color:rgba(255,255,255,.32);font-weight:700;transition:all .3s}
+.fp-dot{width:27px;height:27px;border-radius:50%;background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;font-size:11px;color:rgba(255,255,255,.32);font-weight:700;transition:all .3s}
 .fp-dot.active{background:var(--gold);border-color:var(--gold);color:var(--navy)}
 .fp-dot.done{background:var(--accent);border-color:var(--accent);color:#fff}
 .fp-label{font-size:9px;color:rgba(255,255,255,.28);text-align:center}
 .fp-label.active{color:var(--gold-l)}
-.fp-line{flex:1;height:1px;background:rgba(255,255,255,.08);margin-bottom:14px}
+.fp-line{flex:1;height:1px;background:rgba(255,255,255,.08);margin-bottom:13px}
 .fp-line.done{background:var(--accent)}
 .fstep{display:none}
 .fstep.active{display:block;animation:fadeUp .3s ease}
-@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-.step-title{font-size:16px;font-weight:700;color:#fff;margin-bottom:4px}
-.step-desc{font-size:12px;color:rgba(255,255,255,.35);margin-bottom:24px}
-.frow{margin-bottom:18px}
-.frow-2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:18px}
-label{display:block;font-size:11px;font-weight:700;color:rgba(255,255,255,.5);
-  letter-spacing:.8px;text-transform:uppercase;margin-bottom:6px}
+.step-title{font-size:15px;font-weight:700;color:#fff;margin-bottom:4px}
+.step-desc{font-size:12px;color:rgba(255,255,255,.35);margin-bottom:22px}
+.frow{margin-bottom:16px}
+.frow-2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+label{display:block;font-size:11px;font-weight:700;color:rgba(255,255,255,.5);letter-spacing:.8px;text-transform:uppercase;margin-bottom:6px}
 label .req{color:var(--gold-l);margin-left:3px}
-label .opt{color:rgba(255,255,255,.2);font-weight:400;margin-left:3px;font-size:10px;
-  text-transform:none;letter-spacing:0}
+label .opt{color:rgba(255,255,255,.2);font-weight:400;margin-left:3px;font-size:10px;text-transform:none;letter-spacing:0}
 input[type=text],input[type=email],input[type=tel],input[type=url],select,textarea{
   width:100%;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.1);
-  border-radius:9px;padding:11px 14px;color:#fff;font-size:13px;
+  border-radius:9px;padding:10px 13px;color:#fff;font-size:13px;
   font-family:'Noto Sans KR',sans-serif;transition:border-color .2s,background .2s;outline:none}
 input::placeholder,textarea::placeholder{color:rgba(255,255,255,.18)}
 input:focus,select:focus,textarea:focus{border-color:var(--gold);background:rgba(255,255,255,.09)}
 select{cursor:pointer}
 select option{background:var(--navy);color:#fff}
-textarea{resize:vertical;min-height:85px;line-height:1.65}
-.check-group,.radio-group{display:flex;flex-wrap:wrap;gap:7px}
-.check-item,.radio-item{position:relative}
-.check-item input,.radio-item input{position:absolute;opacity:0;width:0;height:0}
-.check-item label,.radio-item label{display:inline-flex;align-items:center;
-  background:rgba(255,255,255,.05);border:1.5px solid rgba(255,255,255,.08);
-  border-radius:7px;padding:7px 12px;font-size:12px;color:rgba(255,255,255,.52);
-  font-weight:500;letter-spacing:0;text-transform:none;cursor:pointer;transition:all .2s;margin-bottom:0}
-.check-item input:checked+label{background:rgba(212,147,10,.13);
-  border-color:rgba(212,147,10,.45);color:var(--gold-l)}
-.radio-item input:checked+label{background:rgba(42,127,191,.15);
-  border-color:rgba(42,127,191,.45);color:#7BC8E0}
-.scale-group{display:flex;gap:7px;align-items:center}
-.scale-lbl{font-size:10px;color:rgba(255,255,255,.27)}
-.scale-dots{display:flex;gap:6px}
-.scale-item{position:relative}
-.scale-item input{position:absolute;opacity:0;width:0;height:0}
-.scale-item label{width:40px;height:40px;border-radius:8px;
-  background:rgba(255,255,255,.05);border:1.5px solid rgba(255,255,255,.08);
-  display:flex;align-items:center;justify-content:center;font-size:13px;
-  font-weight:700;color:rgba(255,255,255,.33);cursor:pointer;transition:all .2s;
-  text-transform:none;letter-spacing:0;margin-bottom:0;padding:0}
-.scale-item input:checked+label{background:linear-gradient(135deg,var(--gold),var(--gold-l));
-  border-color:var(--gold);color:var(--navy)}
-.form-nav{display:flex;justify-content:space-between;align-items:center;
-  margin-top:28px;padding-top:22px;border-top:1px solid rgba(255,255,255,.07)}
-.btn-prev{background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.1);
-  color:rgba(255,255,255,.5);padding:10px 20px;border-radius:8px;font-size:12.5px;
-  font-weight:600;cursor:pointer;transition:all .2s;font-family:'Noto Sans KR',sans-serif}
+textarea{resize:vertical;min-height:80px;line-height:1.65}
+.radio-group{display:flex;flex-wrap:wrap;gap:7px}
+.radio-item{position:relative}
+.radio-item input{position:absolute;opacity:0;width:0;height:0}
+.radio-item label{display:inline-flex;align-items:center;background:rgba(255,255,255,.05);border:1.5px solid rgba(255,255,255,.08);border-radius:7px;padding:7px 12px;font-size:12px;color:rgba(255,255,255,.52);font-weight:500;letter-spacing:0;text-transform:none;cursor:pointer;transition:all .2s;margin-bottom:0}
+.radio-item input:checked+label{background:rgba(42,127,191,.15);border-color:rgba(42,127,191,.45);color:#7BC8E0}
+.form-nav{display:flex;justify-content:space-between;align-items:center;margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,.07)}
+.btn-prev{background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.1);color:rgba(255,255,255,.5);padding:9px 18px;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;transition:all .2s;font-family:'Noto Sans KR',sans-serif}
 .btn-prev:hover{background:rgba(255,255,255,.1);color:#fff}
-.btn-next{background:linear-gradient(135deg,var(--gold),var(--gold-l));color:var(--navy);
-  padding:10px 24px;border-radius:8px;font-size:12.5px;font-weight:700;cursor:pointer;
-  border:none;transition:all .2s;font-family:'Noto Sans KR',sans-serif;
-  box-shadow:0 4px 14px rgba(212,147,10,.3)}
-.btn-next:hover{transform:translateY(-1px);box-shadow:0 8px 22px rgba(212,147,10,.4)}
-.btn-submit{background:linear-gradient(135deg,var(--green),var(--green-l));color:#fff;
-  padding:12px 28px;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;
-  border:none;transition:all .2s;font-family:'Noto Sans KR',sans-serif;
-  box-shadow:0 4px 18px rgba(39,174,96,.35)}
-.btn-submit:hover{transform:translateY(-1px);box-shadow:0 8px 26px rgba(39,174,96,.45)}
-.form-success{display:none;text-align:center;padding:52px 20px}
+.btn-next{background:linear-gradient(135deg,var(--gold),var(--gold-l));color:var(--navy);padding:9px 22px;border-radius:8px;font-size:12px;font-weight:700;cursor:pointer;border:none;transition:all .2s;font-family:'Noto Sans KR',sans-serif}
+.btn-submit{background:linear-gradient(135deg,var(--green),var(--green-l));color:#fff;padding:11px 26px;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;border:none;font-family:'Noto Sans KR',sans-serif}
+.form-success{display:none;text-align:center;padding:48px 20px}
 .form-success.show{display:block;animation:fadeUp .5s ease}
-.success-icon{width:72px;height:72px;border-radius:50%;
-  background:linear-gradient(135deg,var(--green),var(--green-l));
-  display:flex;align-items:center;justify-content:center;font-size:32px;
-  margin:0 auto 20px;box-shadow:0 8px 28px rgba(39,174,96,.3)}
-.form-success h3{color:#fff;font-size:20px;font-weight:700;margin-bottom:10px}
-.form-success p{color:rgba(255,255,255,.45);font-size:13.5px;line-height:1.85}
-.form-note{text-align:center;margin-top:16px;font-size:11px;color:rgba(255,255,255,.18)}
+.success-icon{width:68px;height:68px;border-radius:50%;background:linear-gradient(135deg,var(--green),var(--green-l));display:flex;align-items:center;justify-content:center;font-size:30px;margin:0 auto 18px}
+.form-success h3{color:#fff;font-size:19px;font-weight:700;margin-bottom:9px}
+.form-success p{color:rgba(255,255,255,.45);font-size:13px;line-height:1.85}
+.form-note-f{text-align:center;margin-top:14px;font-size:11px;color:rgba(255,255,255,.18)}
 
 /* CTA */
-.cta{background:linear-gradient(135deg,var(--navy),var(--blue),var(--mid));
-  padding:72px 48px;text-align:center;position:relative;overflow:hidden}
-.cta::before{content:'';position:absolute;inset:0;
-  background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),
-                   linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);
-  background-size:44px 44px}
-.cta h2{font-family:'DM Serif Display',serif;font-size:clamp(24px,4vw,46px);
-  color:#fff;position:relative;margin-bottom:12px}
-.cta p{font-size:14.5px;color:rgba(255,255,255,.5);position:relative;margin-bottom:28px}
-.cta .btn-gold{font-size:15px;padding:15px 34px;position:relative}
+.cta{background:linear-gradient(135deg,var(--navy),var(--blue),var(--mid));padding:68px 48px;text-align:center;position:relative;overflow:hidden}
+.cta::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:44px 44px}
+.cta h2{font-family:'DM Serif Display',serif;font-size:clamp(24px,4vw,44px);color:#fff;position:relative;margin-bottom:12px}
+.cta p{font-size:14px;color:rgba(255,255,255,.5);position:relative;margin-bottom:26px}
+.cta .btn-gold{font-size:15px;padding:14px 32px;position:relative}
 
-/* FOOTER */
-footer{background:#060e1a;color:rgba(255,255,255,.32);padding:40px 48px}
-.footer-in{max-width:1200px;margin:0 auto;display:flex;
-  justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
-.footer-logo{color:#fff;font-weight:700;font-size:13.5px}
+footer{background:#060e1a;color:rgba(255,255,255,.32);padding:38px 48px}
+.footer-in{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.footer-logo{color:#fff;font-weight:700;font-size:13px}
 .footer-logo span{color:var(--gold-l)}
-.footer-sub{font-size:10.5px;margin-top:3px;color:rgba(255,255,255,.2)}
-.footer-links{display:flex;gap:18px}
-.footer-links a{color:rgba(255,255,255,.28);text-decoration:none;font-size:11.5px;transition:color .2s}
+.footer-sub{font-size:10px;margin-top:3px;color:rgba(255,255,255,.2)}
+.footer-links{display:flex;gap:16px}
+.footer-links a{color:rgba(255,255,255,.28);text-decoration:none;font-size:11px;transition:color .2s}
 .footer-links a:hover{color:rgba(255,255,255,.7)}
 
-/* SCROLL ANIM */
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
 .reveal.visible{opacity:1;transform:translateY(0)}
 
-/* RESPONSIVE */
 @media(max-width:960px){
   nav{padding:0 20px}
   .nav-links{display:none}
   .hero-inner,.greeting-wrap{grid-template-columns:1fr}
   .hero-cards,.hero-mt-bg,.anniv-banner{display:none}
   section{padding:56px 20px}
-  .benefits-grid,.rev-grid,.tiers,.prog-grid,.news-grid,.student-grid,
-  .plan-grid{grid-template-columns:1fr}
-  .frow-2{grid-template-columns:1fr}
-  .gform{padding:26px 18px}
+  .tiers,.biz-preview-grid,.news-layout,.if-row-2,.frow-2{grid-template-columns:1fr}
+  .gform{padding:24px 16px}
   .fund-wrap{grid-template-columns:1fr}
-  .fund-section{padding:48px 20px}
 }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav id="topnav">
   <a href="#" class="nav-brand">
     <div class="nav-mark">MT</div>
@@ -494,11 +443,10 @@ footer{background:#060e1a;color:rgba(255,255,255,.32);padding:40px 48px}
   </a>
   <div class="nav-links">
     <a href="#greeting">동문회 소개</a>
-    <a href="#student">재학생</a>
-    <a href="#benefits">혜택</a>
-    <a href="#plan">5개년계획</a>
-    <a href="#membership">회원</a>
-    <a href="#news">소식</a>
+    <a href="#history">연혁</a>
+    <a href="#membership">동문회비</a>
+    <a href="#activity">동문활동</a>
+    <a href="#news">공지·뉴스</a>
     <a href="#join" class="nav-btn">🎵 동문 등록</a>
   </div>
 </nav>
@@ -508,106 +456,69 @@ footer{background:#060e1a;color:rgba(255,255,255,.32);padding:40px 48px}
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
   <div class="hero-mt-bg">MT</div>
-  <div class="anniv-banner">
-    🎉 1996–2026 · 30TH ANNIVERSARY
-    <span>30주년 동문의 밤 · 2026년 하반기</span>
-  </div>
-
+  <div class="anniv-banner">🎉 1996–2026 · 30TH ANNIVERSARY<span>30주년 동문의 밤 · 2026 하반기</span></div>
   <div class="hero-inner">
     <div>
-      <div class="hero-eyebrow">2026 공식 창립 · 학과 개설 30주년</div>
+      <div class="hero-eyebrow">2024 창립 · 학과 개설 30주년 · 제2대 동문회</div>
       <div class="hero-mt-label">MUSIC TECHNOLOGY</div>
       <div class="hero-mt-sub">Alumni Association · 상명대학교 총동문회</div>
       <h1>음악과 기술,<br><em>30년의 동문이</em><br>하나로 모인다</h1>
-      <p class="hero-sub">1996년 학과 개설 이후 배출한 프로듀서, 사운드 디자이너,<br>
-      엔지니어, 기획자, 교육자 — 모든 동문이 처음으로 연결됩니다.</p>
-      <div class="hero-timeline">
-        <div class="ht-head">2026 창립 일정</div>
-        <div class="ht-item"><div class="ht-dot"></div><b>3월 3째주</b> — 동문 DB 캠페인 공식 시작</div>
-        <div class="ht-item"><div class="ht-dot"></div><b>4월</b> — 협약 스튜디오 동문 할인 개시</div>
-        <div class="ht-item"><div class="ht-dot"></div><b>8월</b> — 공식 창립총회 / 임원진 선출</div>
-        <div class="ht-item"><div class="ht-dot"></div><b>하반기</b> — 30주년 동문의 밤 개최</div>
-      </div>
+      <p class="hero-sub">1996년 학과 개설 이후 배출한 프로듀서, 사운드 디자이너,<br>엔지니어, 기획자, 교육자 — 모든 뮤텍인이 연결됩니다.</p>
       <div class="hero-actions">
         <a href="#join" class="btn-gold">🎼 동문 등록하기</a>
         <a href="#greeting" class="btn-ghost">동문회 소개 보기 →</a>
       </div>
     </div>
-
     <div class="hero-cards">
-      <div class="hcard anniv">
-        <div class="hcard-lbl">🎉 학과 개설 30주년</div>
-        <div class="hcard-val">1996<span>~2026</span></div>
-        <div class="hcard-desc">30주년 동문의 밤 · 2026 하반기 예정</div>
-      </div>
-      <div class="hcard gold">
-        <div class="hcard-lbl">공식 창립총회</div>
-        <div class="hcard-val">2026<span>년 8월</span></div>
-        <div class="hcard-desc">임원진 선출 · 회칙 제정</div>
-      </div>
-      <div class="hcard">
-        <div class="hcard-lbl">세부 전공</div>
-        <div class="hcard-val">4<span>개</span></div>
-        <div class="hcard-desc">프로덕션 · 퍼포먼스 · 오디오 · 비즈니스</div>
-      </div>
+      <div class="hcard anniv"><div class="hcard-lbl">🎉 학과 개설 30주년</div><div class="hcard-val">1996<span>~2026</span></div><div class="hcard-desc">30주년 동문의 밤 · 2026 하반기 예정</div></div>
+      <div class="hcard gold"><div class="hcard-lbl">총동문회 창립</div><div class="hcard-val">2024<span>년 1월</span></div><div class="hcard-desc">제2대 회장 최영신 · 2026년 출범</div></div>
+      <div class="hcard"><div class="hcard-lbl">협약 동문기업</div><div class="hcard-val">6<span>개+</span></div><div class="hcard-desc">동문 특별 할인 혜택 기업</div></div>
     </div>
   </div>
 </section>
 
-<!-- GREETING + ORG (동문회 소개) -->
+<!-- GREETING -->
 <section class="greeting" id="greeting">
   <div class="inner">
-    <div class="reveal">
-      <div class="sec-tag">ABOUT · 동문회 소개</div>
-      <h2 class="sec-title">인사말 및 조직도</h2>
-      <div class="divider"></div>
-    </div>
+    <div class="reveal"><div class="sec-tag">ABOUT · 동문회 소개</div><h2 class="sec-title">인사말 및 조직도</h2><div class="divider"></div></div>
     <div class="greeting-wrap">
       <div class="greeting-text reveal">
-        <p>안녕하십니까,</p>
-        <p>상명대학교 뮤직테크놀로지학과 <span class="hl">초대 회장 최영신</span>입니다.</p>
-        <p>1996년 학과 개설 이후 어느덧 30년이 지났습니다. 그 사이 우리 동문들은 음악 프로듀서, 사운드 디자이너, 오디오 엔지니어, 영상음악 작곡가, 교육자, 기획자, 창업가로서 음악과 기술이 만나는 모든 현장에서 활약해왔습니다.</p>
-        <p>그런데 우리는 서로를 잘 모릅니다. 선배가 어디서 무슨 일을 하는지, 후배가 어떤 고민을 안고 있는지, 옆 기수 동문이 지금 어떤 프로젝트를 하는지 — 그 연결이 없었습니다.</p>
-        <p><span class="hl">상명대 뮤직테크놀로지 총동문회</span>는 그 연결을 만들기 위해 창립합니다. 커리어 지원, 협업 매칭, 실무 정보 공유, 그리고 30년의 역사를 함께 기념하는 자리까지 — 동문회는 동문 여러분의 실질적인 파트너가 되겠습니다.</p>
-        <p>창립의 첫 걸음에 함께해 주십시오. 감사합니다.</p>
+        <p>안녕하세요, 상명대학교 대학원 뮤직테크놀로지학과 동문 여러분.<br><span class="hl">제2대 총동문회장 최영신</span>입니다.</p>
+        <p>7016번 버스타고 논문에 허덕이던 석사 시절을 지나, 도서관 한구석에서 매일 눈물지으며 박사 논문을 써 내려가던 그 시간이 벌써 수년이 흘렀습니다. 뮤텍인이라면 누구나 한 번쯤 거쳐 왔을 그 고단한 시간들이 지금의 우리를 만들었을거라 생각됩니다.</p>
+        <p>지난 30여 년 동안 배출된 수많은 뮤텍인들이 이제는 사회 곳곳에서 자신만의 전문성을 증명하며 활약하고 계십니다. 그 자랑스러운 발자취를 보며 우리 학과의 저력을 다시금 느낍니다.</p>
+        <p>새롭게 단장한 우리 동문회는 이제 단순한 친목과 안부 인사를 넘어, <span class="hl">실질적인 도움을 주고받는 살아있는 네트워크의 장</span>이 되고자 합니다. 이 공간에 여러분의 멋지고 소중한 소식들을 마음껏 남겨주십시오.</p>
+        <p>학과에 대한 여러분의 변함없는 애정과 활발한 참여가 그 어느 때보다 필요한 시점입니다. 저 역시 부족함이 많지만, 상명대학교 뮤직테크놀로지학과와 동문회의 발전을 위해 최선을 다하겠습니다.</p>
+        <p>동문 여러분, 늘 건승하시길 바라며, 이 공간에서 더 자주 뵙기를 소망합니다. 감사합니다.</p>
         <div class="greeting-sign">
-          <div class="role">초대 회장</div>
-          <div class="name">최영신 <span>상명대 뮤직테크놀로지학과 총동문회</span></div>
+          <div class="role">제2대 총동문회장</div>
+          <div class="name">최영신</div>
+          <div class="org">상명대학교 대학원 뮤직테크놀로지학과 총동문회</div>
         </div>
       </div>
-
       <div class="reveal">
         <div class="org-box">
           <div class="org-box-title">📋 2026 동문회 조직도</div>
           <div class="org-chart">
-            <div class="org-top-row">
-              <div class="org-node-main">
-                <div class="r">초대 회장</div>
-                <div class="n">최영신</div>
-              </div>
-            </div>
+            <!-- 회장 크게 -->
+            <div class="org-president"><div class="r">제2대 회장</div><div class="n">최영신</div></div>
             <div class="org-vline"></div>
-            <div class="org-node-main vp" style="width:160px;margin:0 auto">
-              <div class="r">부회장</div>
-              <div class="n">김서희</div>
-            </div>
+            <!-- 부회장 작게 -->
+            <div class="org-vp"><div class="r">부회장</div><div class="n">김서희</div></div>
             <div class="org-vline"></div>
-            <div class="org-mid">
-              <div class="r">사무국장</div>
-              행정 총괄
-            </div>
+            <!-- 사무국장 -->
+            <div class="org-sec"><div class="r">사무국장 · 윤상협</div><div class="members">이수진 · 유진 · 정하현 · 김채린</div></div>
             <div class="org-vline"></div>
             <div class="org-dept-row">
-              <div class="org-dept">기획부<div class="sub">DB·일정</div></div>
-              <div class="org-dept">운영부<div class="sub">행사·모임</div></div>
-              <div class="org-dept">홍보부<div class="sub">SNS·홈피</div></div>
-              <div class="org-dept">대외협력부<div class="sub">협약·채용</div></div>
+              <div class="org-dept">기획이사<div class="sub">권현우</div></div>
+              <div class="org-dept">운영이사<div class="sub">이창구</div></div>
+              <div class="org-dept">홍보이사<div class="sub">양태경</div></div>
+              <div class="org-dept">대외협력<div class="sub">유현식</div></div>
             </div>
-            <div style="width:100%;height:1px;background:var(--border);margin:14px 0"></div>
+            <div style="width:100%;height:1px;background:var(--border);margin:12px 0"></div>
             <div class="org-advisor-row">
               <div class="org-advisor">🎓 고문<br><small style="font-weight:400;font-size:9px">전임 교수님</small></div>
               <div class="org-advisor">💡 자문위원회<br><small style="font-weight:400;font-size:9px">학과교수·선배기수</small></div>
-              <div class="org-advisor">🔍 감사<br><small style="font-weight:400;font-size:9px">권현우</small></div>
+              <div class="org-advisor">🔍 감사<br><small style="font-weight:400;font-size:9px">미정</small></div>
             </div>
           </div>
         </div>
@@ -616,360 +527,17 @@ footer{background:#060e1a;color:rgba(255,255,255,.32);padding:40px 48px}
   </div>
 </section>
 
-<!-- STUDENT — 재학생 섹션 -->
-<section class="student" id="student">
+<!-- HISTORY -->
+<section class="history" id="history">
   <div class="inner">
-    <div class="reveal">
-      <div class="sec-tag">FOR CURRENT STUDENTS</div>
-      <h2 class="sec-title" style="color:#fff">재학생 여러분도<br>지금 바로 함께하세요</h2>
-      <div class="divider" style="background:linear-gradient(90deg,var(--gold),var(--gold-l))"></div>
-      <p class="sec-sub">졸업 후가 아니어도 됩니다. 재학 중에 선배 네트워크를 먼저 만드세요.</p>
-    </div>
-    <div class="student-grid">
-      <div class="stcard reveal">
-        <div class="stcard-icon">☕</div>
-        <div class="stcard-title">선배 동문 1:1 커피챗 매칭</div>
-        <div class="stcard-desc">현업에서 일하는 선배 동문과 1:1로 연결. 졸업 전에 실제 업계 현장의 이야기, 커리어 방향, 포트폴리오 조언을 직접 들을 수 있습니다.</div>
-        <span class="stcard-tag">무료 매칭</span>
-      </div>
-      <div class="stcard reveal">
-        <div class="stcard-icon">🎛️</div>
-        <div class="stcard-title">협약 스튜디오 재학생 할인</div>
-        <div class="stcard-desc">졸업생과 동일하게 협약 스튜디오·연습실 10~30% 할인 혜택 적용. DAW·플러그인 공동구매 특가에도 참여 가능합니다.</div>
-        <span class="stcard-tag">4월부터 이용</span>
-      </div>
-      <div class="stcard reveal">
-        <div class="stcard-icon">📂</div>
-        <div class="stcard-title">졸업작품 선배 피드백</div>
-        <div class="stcard-desc">졸업 실기·논문 준비 중인 재학생의 작품에 현업 선배 동문이 직접 피드백을 제공. 업계 기준에서 바라본 실질적 조언.</div>
-        <span class="stcard-tag">동문회 신청</span>
-      </div>
-      <div class="stcard reveal">
-        <div class="stcard-icon">🔗</div>
-        <div class="stcard-title">현업 프로젝트 참여 기회</div>
-        <div class="stcard-desc">대외협력부를 통해 공유되는 선배 동문 기업·개인의 프로젝트 참여 기회. 재학 중부터 실제 현장 경험을 쌓을 수 있습니다.</div>
-        <span class="stcard-tag">대외협력부 연결</span>
-      </div>
-      <div class="stcard reveal">
-        <div class="stcard-icon">✍️</div>
-        <div class="stcard-title">선배 추천서 프로그램</div>
-        <div class="stcard-desc">멘토링을 통해 깊이 알게 된 선배 동문이 취업·유학·오디션에 필요한 추천서를 제공하는 비공식 프로그램. 동문 네트워크의 힘.</div>
-        <span class="stcard-tag">멘토링 연계</span>
-      </div>
-      <div class="stcard reveal">
-        <div class="stcard-icon">🎓</div>
-        <div class="stcard-title">졸업 후 정회원 자동 전환</div>
-        <div class="stcard-desc">재학생으로 가입하면 졸업 후 자동으로 정회원(기본)으로 전환. 동문회와의 연결이 자연스럽게 이어집니다. 재학생 연회비는 무료.</div>
-        <span class="stcard-tag">재학생 무료</span>
-      </div>
-    </div>
-    <div class="student-cta reveal">
-      <div class="student-cta-text">
-        <strong>재학생 가입은 완전 무료입니다</strong>
-        졸업 후 기본 회원으로 자동 전환 · 선배 네트워크는 지금부터 시작
-      </div>
-      <a href="#join" class="btn-gold">재학생 등록하기 →</a>
-    </div>
-  </div>
-</section>
-
-<!-- BENEFITS -->
-<section class="benefits" id="benefits">
-  <div class="inner">
-    <div class="reveal">
-      <div class="sec-tag">MEMBER BENEFITS</div>
-      <h2 class="sec-title">동문 등록으로 누리는 혜택</h2>
-      <div class="divider"></div>
-      <p class="sec-sub">네트워킹부터 법률·세무 실무 지원까지 — 뮤텍 동문만을 위한 실질적 혜택.</p>
-    </div>
-    <div class="benefits-grid">
-      <div class="bcard reveal">
-        <div class="bcard-icon">🔍</div>
-        <div class="bcard-title">동문 디렉토리 & 협업 매칭</div>
-        <div class="bcard-desc">전공·분야·기수별 동문 검색. 관심사 기반 자동 매칭으로 실제 협업 기회를 만들어드립니다. 등록 동문만 열람 가능.</div>
-      </div>
-      <div class="bcard reveal">
-        <div class="bcard-icon">🎙️</div>
-        <div class="bcard-title">협약 스튜디오 & 장비 할인</div>
-        <div class="bcard-desc">협약 녹음실·연습실 10~30% 상시 할인 (2026년 4월~). DAW·플러그인 공동구매 특가. 프리랜서·개인 창작자에게 실질적 비용 절감.</div>
-      </div>
-      <div class="bcard reveal">
-        <div class="bcard-icon">🤝</div>
-        <div class="bcard-title">멘토-멘티 1:1 매칭</div>
-        <div class="bcard-desc">현업 선배 동문과 1:1 연결. 커리어 상담, 포트폴리오 피드백, 업계 조언. 소규모 분야·지역별 모임도 운영.</div>
-      </div>
-      <div class="bcard reveal bcard special">
-        <div class="bcard-icon">⚖️</div>
-        <div class="bcard-title">법률·세무·행정 지원</div>
-        <div class="bcard-desc">개인사업자·프리랜서 동문을 위한 세금 신고·절세 컨설팅, 법인 전환, 저작권 계약 검토. <strong>평생교육원 설립</strong> 행정 절차 지원 서비스도 제공합니다.</div>
-      </div>
-      <div class="bcard reveal">
-        <div class="bcard-icon">💼</div>
-        <div class="bcard-title">취업·채용·프로젝트 연결</div>
-        <div class="bcard-desc">동문 기업 채용 우선 알림. 현업 선배의 프로젝트 참여 기회 안내. 구인·구직·협업 전용 게시판 운영.</div>
-      </div>
-      <div class="bcard reveal">
-        <div class="bcard-icon">📰</div>
-        <div class="bcard-title">분기별 소식지 & 세미나</div>
-        <div class="bcard-desc">분기별 동문 소식지 발간. 현업 동문 초청 비공개 특강 운영. 업계 트렌드, 동문 활동, 채용 정보를 한 번에.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- REVENUE — 운영 재원 -->
-<section class="revenue" id="revenue">
-  <div class="inner">
-    <div class="reveal">
-      <div class="sec-tag">FINANCIAL STRUCTURE</div>
-      <h2 class="sec-title">동문회 운영 재원 구조</h2>
-      <div class="divider"></div>
-    </div>
-    <div class="rev-intro reveal">
-      <div class="rev-intro-icon">💡</div>
-      <div class="rev-intro-text">
-        <strong>동문회는 회비와 발전기금, 그리고 자체 사업 수익으로 운영됩니다.</strong><br>
-        특정 후원자에 의존하지 않고 단계적으로 자립 구조를 갖추어, 장기적으로 동문 장학금과 사업을 안정적으로 운영하는 것을 목표로 합니다.
-      </div>
-    </div>
-    <div class="rev-grid">
-      <div class="rev-card reveal">
-        <div class="rev-head">
-          <div class="rev-icon">💳</div>
-          <div><div class="rev-name">연회비 & 회원권</div><div class="rev-tag tag-now">즉시</div></div>
-        </div>
-        <ul class="rev-items">
-          <li>기본 연 3만 / 서포터 10만 / 패트론 30만</li>
-          <li>재학생 무료 → 졸업 후 자동 전환</li>
-          <li>DB 200명 기준 예상 연 600~1,000만원</li>
-        </ul>
-      </div>
-      <div class="rev-card reveal">
-        <div class="rev-head">
-          <div class="rev-icon">🎙️</div>
-          <div><div class="rev-name">유료 세미나·특강·행사</div><div class="rev-tag tag-now">즉시</div></div>
-        </div>
-        <ul class="rev-items">
-          <li>비회원 외부 참가자 유료 입장</li>
-          <li>온라인 녹화 VOD 판매</li>
-          <li>30주년 동문의 밤 티켓 수익</li>
-          <li>기업 대상 출강 프로그램</li>
-        </ul>
-      </div>
-      <div class="rev-card reveal">
-        <div class="rev-head">
-          <div class="rev-icon">🏢</div>
-          <div><div class="rev-name">협약·스폰서십</div><div class="rev-tag tag-mid">2026 하반기</div></div>
-        </div>
-        <ul class="rev-items">
-          <li>협약 스튜디오 소개 수수료</li>
-          <li>악기사·SW사·기획사 협찬</li>
-          <li>동문 기업 채용 연결 수수료</li>
-          <li>소식지·홈페이지 광고 게재</li>
-        </ul>
-      </div>
-      <div class="rev-card reveal">
-        <div class="rev-head">
-          <div class="rev-icon">⚖️</div>
-          <div><div class="rev-name">법무·세무 연계 서비스</div><div class="rev-tag tag-mid">2026 하반기</div></div>
-        </div>
-        <ul class="rev-items">
-          <li>제휴 세무사·법무사 연결 소개비</li>
-          <li>개인사업자·법인 전환 패키지</li>
-          <li>저작권 계약 검토 서비스</li>
-          <li>평생교육원 설립 컨설팅 패키지</li>
-        </ul>
-      </div>
-      <div class="rev-card reveal">
-        <div class="rev-head">
-          <div class="rev-icon">🛍️</div>
-          <div><div class="rev-name">굿즈 & 콘텐츠 판매</div><div class="rev-tag tag-later">2027~</div></div>
-        </div>
-        <ul class="rev-items">
-          <li>동문회 공식 굿즈 판매</li>
-          <li>동문 제작 샘플팩·음원 플랫폼</li>
-          <li>뮤직테크 강의 유료 구독</li>
-          <li>쇼케이스 공연 티켓 판매</li>
-        </ul>
-      </div>
-      <div class="rev-card reveal">
-        <div class="rev-head">
-          <div class="rev-icon">🎓</div>
-          <div><div class="rev-name">교육 사업 & 공모 수탁</div><div class="rev-tag tag-later">2028~</div></div>
-        </div>
-        <ul class="rev-items">
-          <li>기업·학교 뮤직테크 교육 수탁</li>
-          <li>문화부·진흥원 공모사업 참여</li>
-          <li>지역 문화 행사 기획·운영 수탁</li>
-          <li>동문 창업 지원 프로그램 연계</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 발전기금 -->
-<section class="fund" id="fund">
-  <div class="fund-inner">
-    <div class="fund-wrap reveal">
-      <div>
-        <div class="fund-tag">DEVELOPMENT FUND</div>
-        <h2 class="fund-title">동문회 발전기금</h2>
-        <p class="fund-desc">
-          발전기금은 동문회의 장기적인 성장과 후배 지원을 위해 조성됩니다.
-          연회비와는 별개로, 동문회의 미래에 더 큰 기여를 원하시는 분들을 위한 특별 후원 프로그램입니다.
-          기금은 장학금 지급, 스튜디오 장비 구비, 프로그램 운영에 사용되며 집행 내역은 연간 총회에서 투명하게 공개됩니다.
-        </p>
-        <div class="fund-tiers">
-          <div class="fund-tier">
-            <div class="fund-tier-name">씨앗 기금</div>
-            <div class="fund-tier-amount">10만+</div>
-            <div class="fund-tier-desc">감사패 & 소식지 기재</div>
-          </div>
-          <div class="fund-tier">
-            <div class="fund-tier-name">성장 기금</div>
-            <div class="fund-tier-amount">50만+</div>
-            <div class="fund-tier-desc">홈페이지 영구 게재</div>
-          </div>
-          <div class="fund-tier hero-tier">
-            <div class="fund-tier-name">창립 기금</div>
-            <div class="fund-tier-amount">100만+</div>
-            <div class="fund-tier-desc">실물 플라크 · 창립 기록 영구 보존</div>
-          </div>
-        </div>
-      </div>
-      <div class="fund-cta">
-        <a href="#join" class="btn-fund">발전기금 참여하기</a>
-        <div class="fund-cta-note">집행 내역 연간 총회 공개<br>지정 기부 가능 (장학금·장비 등)</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 5-YEAR PLAN -->
-<section class="plan" id="plan">
-  <div class="inner">
-    <div class="reveal">
-      <div class="sec-tag">5-YEAR ROADMAP</div>
-      <h2 class="sec-title">추진 사업 5개년 계획</h2>
-      <div class="divider"></div>
-      <p class="sec-sub">현실적이고 단계적인 성장 — 창립부터 국내 자립 생태계 완성까지.</p>
-    </div>
-    <div class="plan-grid reveal">
-      <div class="plan-col now">
-        <div class="plan-yr">2026 · 1년차</div>
-        <div class="plan-phase">🏗️ 창립 & 기반 구축</div>
-        <ul class="plan-list">
-          <li>3월 3째주 DB 캠페인 시작</li>
-          <li>4월 협약 스튜디오 개시</li>
-          <li>8월 창립총회 & 임원 선출</li>
-          <li>하반기 30주년 동문의 밤</li>
-          <li>홈페이지·카카오 오픈채팅 운영</li>
-          <li>회칙·회계 체계 수립</li>
-          <li>신년회·송년회 기획</li>
-        </ul>
-        <div class="plan-kpi">목표: DB 200명 · 창립기금 500만</div>
-      </div>
-      <div class="plan-col">
-        <div class="plan-yr">2027 · 2년차</div>
-        <div class="plan-phase">🚀 활성화 & 프로그램 정착</div>
-        <ul class="plan-list">
-          <li>분기별 유료 특강 정착</li>
-          <li>멘토-멘티 1기 (20쌍)</li>
-          <li>첫 동문 쇼케이스</li>
-          <li>법무·세무 연계 론칭</li>
-          <li>분기별 소식지 발간</li>
-          <li>지역별·분야별 소모임</li>
-          <li>VOD 콘텐츠 판매 시작</li>
-        </ul>
-        <div class="plan-kpi">목표: DB 400명 · 연 운영 자립</div>
-      </div>
-      <div class="plan-col">
-        <div class="plan-yr">2028 · 3년차</div>
-        <div class="plan-phase">🌱 사회적 영향력 확장</div>
-        <ul class="plan-list">
-          <li>동문 창업 지원 프로그램</li>
-          <li>뮤직테크 포럼 (외부 공개)</li>
-          <li>재학생 인턴십 연계</li>
-          <li>굿즈·샘플팩 판매</li>
-          <li>정부 공모사업 참여</li>
-          <li>지역 문화 행사 수탁</li>
-        </ul>
-        <div class="plan-kpi">목표: DB 700명 · 장학금 지급 시작</div>
-      </div>
-      <div class="plan-col">
-        <div class="plan-yr">2029 · 4년차</div>
-        <div class="plan-phase">🏆 브랜드 & 교육 사업</div>
-        <ul class="plan-list">
-          <li>뮤직테크 어워드 창설</li>
-          <li>교육 플랫폼 론칭</li>
-          <li>기업·학교 교육 수탁</li>
-          <li>발전기금 본격 조성</li>
-          <li>학과 교육과정 자문 참여</li>
-        </ul>
-        <div class="plan-kpi">목표: DB 1,000명 · 자체수익 3,000만</div>
-      </div>
-      <div class="plan-col">
-        <div class="plan-yr">2030 · 5년차</div>
-        <div class="plan-phase">🎯 지속가능 생태계 완성</div>
-        <ul class="plan-list">
-          <li>장학 기금 법인화</li>
-          <li>5개년 성과 보고서</li>
-          <li>차세대 리더십 프로그램</li>
-          <li>학과-동문-업계 생태계</li>
-          <li>완전 재정 자립</li>
-        </ul>
-        <div class="plan-kpi">목표: DB 1,500명 · 장학금 500만/년</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PROGRAMS -->
-<section class="programs" id="programs">
-  <div class="inner">
-    <div class="reveal">
-      <div class="sec-tag">PROGRAMS</div>
-      <h2 class="sec-title">주요 추진 프로그램</h2>
-      <div class="divider"></div>
-    </div>
-    <div class="prog-grid">
-      <div class="pcard reveal">
-        <div class="pcard-icon">🌙</div>
-        <div class="pcard-title">30주년 동문의 밤</div>
-        <div class="pcard-desc">1996년 학과 개설 30주년을 기념하는 창립 첫 해의 가장 큰 행사. 전체 동문 초청, 공연, 시상, 네트워킹.</div>
-        <span class="pcard-tag tag-now">2026 하반기</span>
-      </div>
-      <div class="pcard reveal">
-        <div class="pcard-icon">🧑‍💼</div>
-        <div class="pcard-title">멘토-멘티 매칭</div>
-        <div class="pcard-desc">현업 동문과 신진 동문·재학생을 연결하는 1:1 매칭. 커피챗, 포트폴리오 피드백, 추천서 연계.</div>
-        <span class="pcard-tag tag-now">창립 후 시작</span>
-      </div>
-      <div class="pcard reveal">
-        <div class="pcard-icon">📚</div>
-        <div class="pcard-title">현업 특강 시리즈</div>
-        <div class="pcard-desc">동문 현업인 초청 분기별 특강. 비회원 외부 유료 오픈. 녹화 VOD 판매로 수익 창출.</div>
-        <span class="pcard-tag tag-now">2026 하반기</span>
-      </div>
-      <div class="pcard reveal">
-        <div class="pcard-icon">⚖️</div>
-        <div class="pcard-title">법률·세무·행정 지원</div>
-        <div class="pcard-desc">개인사업자·프리랜서 동문 대상. 세금 신고, 법인 설립, 저작권, 평생교육원 설립 행정 지원.</div>
-        <span class="pcard-tag tag-mid">2026 하반기</span>
-      </div>
-      <div class="pcard reveal">
-        <div class="pcard-icon">🎤</div>
-        <div class="pcard-title">동문 쇼케이스 & 공연</div>
-        <div class="pcard-desc">동문 음악가·프로듀서의 연간 쇼케이스. 외부 티켓 판매로 자체 수익, 동문 홍보 기회 제공.</div>
-        <span class="pcard-tag tag-mid">2027~</span>
-      </div>
-      <div class="pcard reveal">
-        <div class="pcard-icon">🚀</div>
-        <div class="pcard-title">창업 지원 & 뮤직테크 어워드</div>
-        <div class="pcard-desc">음악·기술 분야 동문 창업 지원. 연 1회 뮤직테크 어워드 시상으로 동문 업적 공식 인정.</div>
-        <span class="pcard-tag tag-later">2028~2029</span>
-      </div>
+    <div class="reveal"><div class="sec-tag">HISTORY</div><h2 class="sec-title">동문회 연혁</h2><div class="divider"></div></div>
+    <div class="timeline reveal">
+      <div class="tl-item"><div class="tl-dot">1996</div><div class="tl-body"><div class="tl-date">1996년</div><div class="tl-title">상명대학교 뮤직테크놀로지학과 개설</div></div></div>
+      <div class="tl-item"><div class="tl-dot">2024<br>1월</div><div class="tl-body"><div class="tl-date">2024년 1월</div><div class="tl-title">상명대학교 뮤직테크놀로지학과 총동문회 설립</div></div></div>
+      <div class="tl-item"><div class="tl-dot">2025<br>1월</div><div class="tl-body"><div class="tl-date">2025년 1월 4일</div><div class="tl-title">2025년 신년회 개최</div></div></div>
+      <div class="tl-item"><div class="tl-dot">2025<br>4월</div><div class="tl-body"><div class="tl-date">2025년 4월 2일</div><div class="tl-title">상명대학교 뮤직테크놀로지학과 MOU 체결</div></div></div>
+      <div class="tl-item"><div class="tl-dot">2026<br>2월</div><div class="tl-body"><div class="tl-date">2026년 2월 21일</div><div class="tl-title">2026년 신년회 개최 · 제2대 집행부 출범</div></div></div>
+      <div class="tl-item"><div class="tl-dot" style="background:linear-gradient(135deg,var(--accent),#7BC8E0)">2026<br>하반기</div><div class="tl-body" style="border-color:rgba(42,127,191,.3);background:rgba(42,127,191,.04)"><div class="tl-date">2026년 하반기 예정</div><div class="tl-title">30주년 동문의 밤 개최</div></div></div>
     </div>
   </div>
 </section>
@@ -977,77 +545,227 @@ footer{background:#060e1a;color:rgba(255,255,255,.32);padding:40px 48px}
 <!-- MEMBERSHIP -->
 <section class="membership" id="membership">
   <div class="inner">
-    <div class="reveal">
-      <div class="sec-tag">MEMBERSHIP</div>
-      <h2 class="sec-title">회원 등급 안내</h2>
-      <div class="divider"></div>
-    </div>
+    <div class="reveal"><div class="sec-tag">MEMBERSHIP FEE</div><h2 class="sec-title">동문회비 안내</h2><div class="divider"></div></div>
+    <div class="fee-intro reveal">동문 회비는 상명대학교 뮤직테크놀로지학과 동문들의 <strong>네트워크 구축, 행사 개최</strong> 등에 사용됩니다. 총동문회의 미래에 함께 해주세요.</div>
     <div class="tiers reveal">
-      <div class="tier student-tier">
-        <div class="tier-badge green">🎓 재학생 무료</div>
-        <div class="tier-icon">🏫</div>
-        <div class="tier-name">재학생 회원</div>
-        <div class="tier-price">무료</div>
-        <div class="tier-period">재학 기간 / 졸업 후 자동전환</div>
-        <ul class="tier-list">
-          <li>선배 1:1 커피챗 매칭</li>
-          <li>협약 스튜디오 할인</li>
-          <li>졸업작품 피드백</li>
-          <li>프로젝트 참여 연결</li>
-          <li>동문회 행사 참가</li>
-        </ul>
-      </div>
       <div class="tier">
-        <div class="tier-icon">🎵</div>
-        <div class="tier-name">기본 회원</div>
-        <div class="tier-price">3만</div>
-        <div class="tier-period">연간 (월 2,500원)</div>
+        <div class="tier-icon">🎵</div><div class="tier-name">연회비</div>
+        <div class="tier-price">1만</div><div class="tier-period">연 1회 납부</div>
         <ul class="tier-list">
-          <li>동문 디렉토리 열람</li>
-          <li>월간 뉴스레터</li>
-          <li>채용·협업 알림</li>
-          <li>커뮤니티 가입</li>
+          <li>동문 커뮤니티 참여</li><li>동문기업 할인 혜택</li>
+          <li>경조사 화환·근조기 발송</li><li>동문회 한정 굿즈 증정</li>
         </ul>
       </div>
       <div class="tier best">
-        <div class="tier-badge">⭐ 추천</div>
-        <div class="tier-icon">🎸</div>
-        <div class="tier-name">서포터 회원</div>
-        <div class="tier-price">10만</div>
-        <div class="tier-period">연간</div>
+        <div class="tier-badge">💎 논의 중</div>
+        <div class="tier-icon">🏆</div><div class="tier-name">평생회비</div>
+        <div class="tier-price">30만</div><div class="tier-period">일시납</div>
         <ul class="tier-list">
-          <li>기본 혜택 전체</li>
-          <li>세미나 할인 참가</li>
-          <li>스튜디오 20% 할인</li>
-          <li>멘토링 프로그램</li>
-          <li>법무·세무 1회 상담</li>
+          <li>연회비 혜택 전체 포함</li><li>전문가 1:1 컨설팅</li>
+          <li>법률·공연·학술 자문</li><li>홈페이지 영구 기재</li>
         </ul>
       </div>
       <div class="tier">
-        <div class="tier-icon">🏆</div>
-        <div class="tier-name">패트론 회원</div>
-        <div class="tier-price">30만</div>
-        <div class="tier-period">연간</div>
+        <div class="tier-icon">🌟</div><div class="tier-name">후원</div>
+        <div class="tier-price">자유</div><div class="tier-period">금액 제한 없음</div>
         <ul class="tier-list">
-          <li>서포터 혜택 전체</li>
-          <li>행사 VIP석</li>
-          <li>홈페이지 이름 게재</li>
-          <li>법무·세무 3회 상담</li>
-          <li>스튜디오 30% 할인</li>
+          <li>동문회 발전 기여</li><li>장학금·행사 지원</li>
+          <li>감사패 증정</li><li>창립 기여 영구 기록</li>
         </ul>
       </div>
-      <div class="tier">
-        <div class="tier-icon">🌟</div>
-        <div class="tier-name">창립 후원자</div>
-        <div class="tier-price">100만+</div>
-        <div class="tier-period">발전기금 일시 납부</div>
-        <ul class="tier-list">
-          <li>영구 명예 회원</li>
-          <li>실물 플라크 증정</li>
-          <li>총회 발언권</li>
-          <li>창립 기여 영구 기록</li>
-          <li>법무·세무 무제한</li>
-        </ul>
+    </div>
+    <div class="fee-pay reveal">
+      <div class="fee-pay-title">💳 납부 방법</div>
+      <div class="fee-pay-row"><span class="lbl">계좌번호</span><span class="val">신한은행 140-015-119089</span><span style="font-size:12px;color:var(--gray)">상명대학교 뮤직테크놀로지학과 총동문회</span></div>
+      <div class="fee-note">입금 시 <strong>성함 + 기수 + 전공</strong>으로 입금해주시면 빠른 확인이 가능합니다.<br>예시: <strong>상명이24기오텍</strong> · 납부 확인: 입금 후 공식 메일 또는 카카오톡 채널로 연락해주세요.</div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits" id="benefits">
+  <div class="inner">
+    <div class="reveal"><div class="sec-tag">MEMBER BENEFITS</div><h2 class="sec-title">회원 혜택</h2><div class="divider"></div></div>
+    <div class="benefits-grid">
+      <div class="bcard reveal"><div class="bcard-icon">🎁</div><div class="bcard-title">동문회 한정 굿즈 증정</div><div class="bcard-desc">회원 전용 굿즈를 증정합니다. 뮤텍 동문임을 자랑스럽게 나타낼 수 있는 특별한 아이템.</div></div>
+      <div class="bcard reveal"><div class="bcard-icon">🎊</div><div class="bcard-title">경조사 화환 · 근조기 발송</div><div class="bcard-desc">본인 및 직계 가족 경조사 시 동문회 명의로 축하기·근조기를 발송해드립니다. 성함/기수/일시/장소를 공식 메일로 제보해주세요.</div></div>
+      <div class="bcard reveal"><div class="bcard-icon">🏢</div><div class="bcard-title">동문업체 특별 우대</div><div class="bcard-desc">협약 동문 기업에서 다양한 할인 혜택을 받을 수 있습니다. 동문활동 → 동문기업 섹션에서 확인하세요.</div></div>
+      <div class="bcard reveal"><div class="bcard-icon">🧑‍💼</div><div class="bcard-title">전문가 1:1 컨설팅</div><div class="bcard-desc">법률, 콘텐츠 제작, 공연 기획, 지원 사업 등 동문 전문가의 1:1 자문 서비스. 동문회비 납부 회원 대상.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ACTIVITY — 탭 구조 -->
+<section class="activity" id="activity">
+  <div class="inner">
+    <div class="reveal"><div class="sec-tag">ACTIVITY & MATCHING</div><h2 class="sec-title">동문 활동</h2><div class="divider"></div></div>
+
+    <div class="act-tabs reveal">
+      <button class="act-tab active" onclick="switchTab('biz')">🏢 동문기업</button>
+      <button class="act-tab" onclick="switchTab('portfolio')">📁 동문 포트폴리오</button>
+      <button class="act-tab" onclick="switchTab('consult')">🧑‍💼 전문가 컨설팅</button>
+      <button class="act-tab" onclick="switchTab('jobs')">💼 구인·구직·파트너</button>
+    </div>
+
+    <!-- 동문기업 탭 -->
+    <div class="act-tab-content active" id="tab-biz">
+      <p class="act-desc">동문이 운영하는 기업 홍보 및 협력 공간 — 카드를 클릭하면 상세 정보와 혜택을 확인할 수 있습니다.</p>
+      <div class="biz-preview-grid">
+        <div class="biz-preview" onclick="openBiz(0)"><div class="biz-num">01</div><div class="biz-pname">아트앤피플컴퍼니</div><div class="biz-ptype">예술 콘텐츠 제작 · 교육프로그램</div><div class="biz-pbadge">클래스 10% 할인</div></div>
+        <div class="biz-preview" onclick="openBiz(1)"><div class="biz-num">02</div><div class="biz-pname">조율뮤직앤아트</div><div class="biz-ptype">보컬스튜디오 · 실용음악학원</div><div class="biz-pbadge">10% 할인</div></div>
+        <div class="biz-preview" onclick="openBiz(2)"><div class="biz-num">03</div><div class="biz-pname">킨치보컬아카데미</div><div class="biz-ptype">보컬학원</div><div class="biz-pbadge">첫 달 20% 할인</div></div>
+        <div class="biz-preview" onclick="openBiz(3)"><div class="biz-num">04</div><div class="biz-pname">㈜합동전자산업</div><div class="biz-ptype">방송·음향기기 제조·유통·시공</div><div class="biz-pbadge">도매가 공급</div></div>
+        <div class="biz-preview" onclick="openBiz(4)"><div class="biz-num">05</div><div class="biz-pname">상명피아노음악교습소</div><div class="biz-ptype">교육서비스업</div><div class="biz-pbadge">연습실 지원</div></div>
+        <div class="biz-preview" onclick="openBiz(5)"><div class="biz-num">06</div><div class="biz-pname">가혜보컬 & 음악연습실</div><div class="biz-ptype">보컬학원 · 연습실 대여</div><div class="biz-pbadge">시간제 무료 + 20% 할인</div></div>
+      </div>
+    </div>
+
+    <!-- 동문 포트폴리오 탭 -->
+    <div class="act-tab-content" id="tab-portfolio">
+      <div class="inner-form">
+        <h3>📁 동문 포트폴리오 등록</h3>
+        <p>전문가와 전문가를 잇는 확실한 네트워크. 나의 작업물과 전문 분야를 등록하면 협업 제안을 받을 수 있습니다. 등록 후 운영진 검토를 거쳐 동문 디렉토리에 게재됩니다.</p>
+        <div class="if-row-2">
+          <div><label class="if-label">이름 <span class="req">*</span></label><input class="if-input" type="text" placeholder="홍길동"></div>
+          <div><label class="if-label">입학기수 / 전공 <span class="req">*</span></label><input class="if-input" type="text" placeholder="예: 24기 / 오디오테크놀로지"></div>
+        </div>
+        <div class="if-row">
+          <label class="if-label">경력 요약 <span class="req">*</span></label>
+          <textarea class="if-input if-textarea" placeholder="예: 영화·광고음악 작곡 10년 / 레코딩 엔지니어 / 음악 프로듀서 등 간략히 작성해주세요"></textarea>
+        </div>
+        <div class="if-row">
+          <label class="if-label">작업물 링크 <span class="opt">(선택)</span></label>
+          <input class="if-input" type="url" placeholder="https:// (포트폴리오 사이트, 유튜브, 사운드클라우드 등)">
+        </div>
+        <div class="if-row">
+          <label class="if-label">SNS / 연락처 <span class="opt">(선택)</span></label>
+          <input class="if-input" type="text" placeholder="인스타그램 @아이디 또는 이메일">
+        </div>
+        <div class="if-row">
+          <label class="if-label">협업 희망 분야 <span class="req">*</span></label>
+          <div class="check-pills">
+            <div class="check-pill"><input type="checkbox" id="cp1"><label for="cp1">음악 제작</label></div>
+            <div class="check-pill"><input type="checkbox" id="cp2"><label for="cp2">영상·광고음악</label></div>
+            <div class="check-pill"><input type="checkbox" id="cp3"><label for="cp3">레코딩·믹싱</label></div>
+            <div class="check-pill"><input type="checkbox" id="cp4"><label for="cp4">공연 기획</label></div>
+            <div class="check-pill"><input type="checkbox" id="cp5"><label for="cp5">교육·레슨</label></div>
+            <div class="check-pill"><input type="checkbox" id="cp6"><label for="cp6">연구·학술</label></div>
+            <div class="check-pill"><input type="checkbox" id="cp7"><label for="cp7">창업·비즈니스</label></div>
+            <div class="check-pill"><input type="checkbox" id="cp8"><label for="cp8">기타</label></div>
+          </div>
+        </div>
+        <div class="if-row">
+          <label class="if-label">공개 범위</label>
+          <div class="check-pills">
+            <div class="check-pill"><input type="radio" name="port_pub" id="pp1"><label for="pp1">동문 전체 공개</label></div>
+            <div class="check-pill"><input type="radio" name="port_pub" id="pp2"><label for="pp2">이름·분야만 공개</label></div>
+          </div>
+        </div>
+        <button class="if-btn" onclick="submitInnerForm('port-success')">포트폴리오 등록 신청</button>
+        <div class="if-success" id="port-success">✅ 등록 신청이 완료됐어요! 운영진 검토 후 동문 디렉토리에 게재됩니다.</div>
+      </div>
+    </div>
+
+    <!-- 전문가 컨설팅 탭 -->
+    <div class="act-tab-content" id="tab-consult">
+      <div class="inner-form">
+        <h3>🧑‍💼 전문가 컨설팅 신청</h3>
+        <p>동문회비 납부 회원 대상 1:1 자문 서비스입니다. 분야별 동문 전문가가 직접 자문해드립니다. 신청 후 48시간 내로 담당 전문가를 연결해드립니다.</p>
+        <div class="if-row-2">
+          <div><label class="if-label">이름 <span class="req">*</span></label><input class="if-input" type="text" placeholder="홍길동"></div>
+          <div><label class="if-label">연락처 (이메일) <span class="req">*</span></label><input class="if-input" type="email" placeholder="example@email.com"></div>
+        </div>
+        <div class="if-row">
+          <label class="if-label">컨설팅 분야 <span class="req">*</span></label>
+          <div class="check-pills">
+            <div class="check-pill"><input type="radio" name="consult_field" id="cf1"><label for="cf1">공연 기획</label></div>
+            <div class="check-pill"><input type="radio" name="consult_field" id="cf2"><label for="cf2">법률 · 저작권</label></div>
+            <div class="check-pill"><input type="radio" name="consult_field" id="cf3"><label for="cf3">연구 · 학술</label></div>
+            <div class="check-pill"><input type="radio" name="consult_field" id="cf4"><label for="cf4">예술 · 창작</label></div>
+            <div class="check-pill"><input type="radio" name="consult_field" id="cf5"><label for="cf5">커리어 설계</label></div>
+            <div class="check-pill"><input type="radio" name="consult_field" id="cf6"><label for="cf6">콘텐츠 제작 기술</label></div>
+            <div class="check-pill"><input type="radio" name="consult_field" id="cf7"><label for="cf7">사업 · 창업</label></div>
+            <div class="check-pill"><input type="radio" name="consult_field" id="cf8"><label for="cf8">지원 사업</label></div>
+          </div>
+        </div>
+        <div class="if-row">
+          <label class="if-label">상담 내용 <span class="req">*</span></label>
+          <textarea class="if-input if-textarea" placeholder="어떤 부분에 대해 자문이 필요하신지 구체적으로 작성해주세요. 구체적일수록 적합한 전문가를 연결해드릴 수 있습니다."></textarea>
+        </div>
+        <div class="if-row">
+          <label class="if-label">선호 상담 방식</label>
+          <div class="check-pills">
+            <div class="check-pill"><input type="radio" name="consult_method" id="cm1"><label for="cm1">이메일</label></div>
+            <div class="check-pill"><input type="radio" name="consult_method" id="cm2"><label for="cm2">전화 통화</label></div>
+            <div class="check-pill"><input type="radio" name="consult_method" id="cm3"><label for="cm3">화상 미팅</label></div>
+            <div class="check-pill"><input type="radio" name="consult_method" id="cm4"><label for="cm4">대면 미팅</label></div>
+          </div>
+        </div>
+        <button class="if-btn green" onclick="submitInnerForm('consult-success')">컨설팅 신청하기</button>
+        <div class="if-success" id="consult-success">✅ 컨설팅 신청이 완료됐어요! 48시간 내로 적합한 전문가를 연결해드리겠습니다.</div>
+      </div>
+    </div>
+
+    <!-- 구인구직 탭 -->
+    <div class="act-tab-content" id="tab-jobs">
+      <div class="job-board">
+        <div class="job-board-header">
+          <h4>💼 구인 · 구직 · 파트너 찾기</h4>
+          <button class="job-post-btn" onclick="toggleJobForm()">+ 게시글 올리기</button>
+        </div>
+
+        <!-- 게시글 등록 폼 -->
+        <div class="job-post-form" id="jobPostForm">
+          <h4>📝 게시글 등록</h4>
+          <div class="if-row-2">
+            <div><label class="if-label">이름 / 기수 <span class="req">*</span></label><input class="if-input" type="text" placeholder="홍길동 / 24기"></div>
+            <div>
+              <label class="if-label">유형 <span class="req">*</span></label>
+              <div class="check-pills" style="margin-top:2px">
+                <div class="check-pill"><input type="radio" name="jtype" id="jt1"><label for="jt1" style="font-size:12px">구인</label></div>
+                <div class="check-pill"><input type="radio" name="jtype" id="jt2"><label for="jt2" style="font-size:12px">구직</label></div>
+                <div class="check-pill"><input type="radio" name="jtype" id="jt3"><label for="jt3" style="font-size:12px">파트너 찾기</label></div>
+              </div>
+            </div>
+          </div>
+          <div class="if-row"><label class="if-label">제목 <span class="req">*</span></label><input class="if-input" type="text" placeholder="예: 영상음악 작곡가 구합니다 / 레코딩 엔지니어 일자리 찾습니다"></div>
+          <div class="if-row"><label class="if-label">내용 <span class="req">*</span></label><textarea class="if-input if-textarea" placeholder="분야, 기간, 조건, 연락 방법 등을 자세히 작성해주세요"></textarea></div>
+          <div class="if-row"><label class="if-label">연락처 <span class="req">*</span></label><input class="if-input" type="text" placeholder="이메일 또는 카카오톡 ID"></div>
+          <button class="if-btn" onclick="submitJobPost()">게시글 등록하기</button>
+          <div class="if-success" id="job-success">✅ 게시글이 등록됐어요! 운영진 확인 후 게시판에 올라갑니다.</div>
+        </div>
+
+        <!-- 샘플 게시글 -->
+        <div class="job-list">
+          <div class="job-item">
+            <div class="job-badge badge-hire">구인</div>
+            <div class="job-info">
+              <div class="job-title">영상·광고음악 작곡가 프리랜서 구합니다</div>
+              <div class="job-meta">기업 홍보 영상 BGM 제작 · 단기 계약 · 협의 가능 · 서울</div>
+            </div>
+          </div>
+          <div class="job-item">
+            <div class="job-badge badge-seek">구직</div>
+            <div class="job-info">
+              <div class="job-title">레코딩·믹싱 엔지니어 프리랜서 활동 중</div>
+              <div class="job-meta">홈 스튜디오 보유 · 앨범·EP·싱글 작업 가능 · 협업 환영</div>
+            </div>
+          </div>
+          <div class="job-item">
+            <div class="job-badge badge-collab">파트너</div>
+            <div class="job-info">
+              <div class="job-title">인디 밴드 EP 제작 프로듀서 찾습니다</div>
+              <div class="job-meta">3~4곡 분량 · 2026년 하반기 목표 · 조건 협의</div>
+            </div>
+          </div>
+          <div class="job-item">
+            <div class="job-badge badge-hire">구인</div>
+            <div class="job-info">
+              <div class="job-title">음악학원 실용음악 강사 모집</div>
+              <div class="job-meta">경기도 고양시 · 기타·보컬·피아노 · 주 3회 이상</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1056,34 +774,202 @@ footer{background:#060e1a;color:rgba(255,255,255,.32);padding:40px 48px}
 <!-- NEWS -->
 <section class="news" id="news">
   <div class="inner">
-    <div class="reveal">
-      <div class="sec-tag">NEWS</div>
-      <h2 class="sec-title">동문회 소식</h2>
-      <div class="divider"></div>
-    </div>
-    <div class="news-grid">
-      <div class="ncard reveal">
-        <div class="nthumb nt1">🎙️</div>
-        <div class="nbody">
-          <div class="ncat">공지</div>
-          <div class="ntitle">동문 DB 캠페인 공식 시작 — 창립 멤버를 모집합니다</div>
-          <div class="ndate">2026년 3월 3째주</div>
+    <div class="reveal"><div class="sec-tag">NOTICE & NEWS</div><h2 class="sec-title">공지 · 뉴스 · 갤러리</h2><div class="divider"></div></div>
+    <div class="news-layout reveal">
+
+      <!-- 왼쪽: 공지사항 게시판 -->
+      <div>
+        <div class="notice-board">
+          <div class="notice-board-header">
+            <h3>📌 공지사항</h3>
+            <span>클릭하면 내용을 볼 수 있어요</span>
+          </div>
+
+          <!-- 공지 1: 동문회비 -->
+          <div class="notice-item" onclick="toggleNotice('n1')">
+            <span class="notice-badge nbadge-fixed">고정</span>
+            <div class="notice-body">
+              <div class="notice-title">2026년도 동문회비 납부 안내 및 회원 혜택</div>
+              <div class="notice-meta">2026.02.21 · 운영진</div>
+            </div>
+          </div>
+          <div class="notice-detail" id="n1">
+            <div class="notice-detail-title">2026년도 동문회비 납부 안내 및 회원 혜택</div>
+            <div class="notice-detail-body">
+              <p>상명대학교 뮤직테크놀로지학과 총동문회 회원 여러분께 2026년도 동문회비 납부를 안내드립니다.</p>
+              <br>
+              <strong>회비 종류</strong>
+              <ul>
+                <li>연회비: 1만원 (연 1회)</li>
+                <li>평생회비: 30만원 (논의 중)</li>
+                <li>후원금: 금액 제한 없음</li>
+              </ul>
+              <br>
+              <strong>납부 계좌</strong>
+              <div class="notice-step">
+                신한은행 140-015-119089<br>
+                예금주: 상명대학교 뮤직테크놀로지학과 총동문회
+              </div>
+              <strong>입금 방법</strong>
+              <div class="notice-step">
+                입금자명: <strong>성함 + 기수 + 전공</strong><br>
+                예시: <strong>홍길동24기오텍</strong><br>
+                납부 확인: 입금 후 공식 메일 또는 카카오톡 채널로 연락해주세요.
+              </div>
+              <strong>회원 혜택</strong>
+              <ul>
+                <li>동문회 한정 굿즈 증정</li>
+                <li>본인 및 직계 가족 경조사 시 화환·근조기 발송</li>
+                <li>협약 동문업체 특별 우대</li>
+                <li>전문가 1:1 컨설팅 (평생회원 대상)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 공지 2: 홈페이지 이용 가이드 -->
+          <div class="notice-item" onclick="toggleNotice('n2')">
+            <span class="notice-badge nbadge-fixed">고정</span>
+            <div class="notice-body">
+              <div class="notice-title">홈페이지 이용 가이드</div>
+              <div class="notice-meta">2026.03.01 · 운영진</div>
+            </div>
+          </div>
+          <div class="notice-detail" id="n2">
+            <div class="notice-detail-title">홈페이지 이용 가이드</div>
+            <div class="notice-detail-body">
+              <strong>📁 동문 포트폴리오 등록 방법</strong>
+              <div class="notice-step">
+                <span class="step-num">1</span> 상단 메뉴 → 동문활동 → 동문 포트폴리오 탭 클릭<br>
+                <span class="step-num">2</span> 등록 양식 작성: 이름 / 기수·전공 / 경력 / 작업물 링크 / 협업 희망 분야<br>
+                <span class="step-num">3</span> 신청 버튼 클릭 → 운영진 검토 후 디렉토리 게재 (1~3일 소요)<br>
+                <span class="step-num">4</span> 문의: <a href="mailto:mutech.alumni@gmail.com" class="mail-link">mutech.alumni@gmail.com</a>
+              </div>
+              <strong>🏢 동문기업 등록 방법</strong>
+              <div class="notice-step">
+                <span class="step-num">1</span> 아래 정보를 공식 메일로 제출해주세요<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;· 대표자 성함 / 기수 / 전공<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;· 기업명 / 업종 / 주소 / 홈페이지<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;· 동문 특별 혜택 내용<br>
+                <span class="step-num">2</span> 공식 메일: <a href="mailto:mutech.alumni@gmail.com" class="mail-link">mutech.alumni@gmail.com</a><br>
+                <span class="step-num">3</span> 운영진 검토 후 동문기업 목록에 등재 (3~5일 소요)
+              </div>
+              <strong>💼 구인·구직·파트너 게시글 올리는 방법</strong>
+              <div class="notice-step">
+                <span class="step-num">1</span> 동문활동 → 구인·구직·파트너 탭 클릭<br>
+                <span class="step-num">2</span> "게시글 올리기" 버튼 클릭<br>
+                <span class="step-num">3</span> 유형 선택 (구인 / 구직 / 파트너 찾기) 후 내용 작성<br>
+                <span class="step-num">4</span> 운영진 확인 후 게시판에 노출 (1~2일 소요)
+              </div>
+              <strong>🎊 경조사 제보 방법</strong>
+              <div class="notice-step">
+                성함 / 기수 / 일시 / 장소 / 내용을<br>
+                <a href="mailto:mutech.alumni@gmail.com" class="mail-link">mutech.alumni@gmail.com</a> 또는 임원진 연락처로 전달해주세요.
+              </div>
+            </div>
+          </div>
+
+          <!-- 공지 3: 임원진 안내 -->
+          <div class="notice-item" onclick="toggleNotice('n3')">
+            <span class="notice-badge nbadge-notice">공지</span>
+            <div class="notice-body">
+              <div class="notice-title">제2대 총동문회 신규 임원진 및 조직도 안내</div>
+              <div class="notice-meta">2026.02.21 · 운영진</div>
+            </div>
+          </div>
+          <div class="notice-detail" id="n3">
+            <div class="notice-detail-title">제2대 총동문회 신규 임원진 안내</div>
+            <div class="notice-detail-body">
+              <p>2026년 2월 21일 신년회를 통해 제2대 집행부가 공식 출범하였습니다.</p>
+              <br>
+              <ul>
+                <li>회장: 최영신</li>
+                <li>부회장: 김서희</li>
+                <li>사무국장: 윤상협 / 사무국: 이수진 · 유진 · 정하현 · 김채린</li>
+                <li>기획이사: 권현우</li>
+                <li>운영이사: 이창구</li>
+                <li>홍보이사: 양태경</li>
+                <li>대외협력이사: 유현식</li>
+                <li>감사: 미정</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 공지 4: 동문의 밤 -->
+          <div class="notice-item" onclick="toggleNotice('n4')">
+            <span class="notice-badge nbadge-event">행사</span>
+            <div class="notice-body">
+              <div class="notice-title">학과 개설 30주년 기념 동문의 밤 개최 예정</div>
+              <div class="notice-meta">2026.03.01 · 운영진</div>
+            </div>
+          </div>
+          <div class="notice-detail" id="n4">
+            <div class="notice-detail-title">30주년 동문의 밤</div>
+            <div class="notice-detail-body">
+              <p>1996년 학과 개설 이후 꼭 30년이 되는 2026년, 전체 동문을 초청하는 기념 행사를 준비 중입니다.</p>
+              <br>
+              <ul>
+                <li>일시: 2026년 하반기 (추후 확정)</li>
+                <li>장소: 미정 (추후 공지)</li>
+                <li>대상: 전체 동문 및 재학생</li>
+                <li>내용: 동문 네트워킹 · 공연 · 시상 · 만찬</li>
+              </ul>
+              <br>
+              <p>확정 일정은 공식 메일 및 카카오톡 채널을 통해 별도 안내드립니다.</p>
+            </div>
+          </div>
+
+          <!-- 공지 5: DB 캠페인 -->
+          <div class="notice-item" onclick="toggleNotice('n5')">
+            <span class="notice-badge nbadge-notice">공지</span>
+            <div class="notice-body">
+              <div class="notice-title">동문 DB 캠페인 시작 — 지금 등록해주세요</div>
+              <div class="notice-meta">2026.03.17 · 운영진</div>
+            </div>
+          </div>
+          <div class="notice-detail" id="n5">
+            <div class="notice-detail-title">동문 DB 캠페인 시작</div>
+            <div class="notice-detail-body">
+              <p>2026년 3월 3째주부터 동문 DB 캠페인을 공식 시작합니다. 동문 여러분의 소중한 정보를 등록해주시면 협업 매칭, 채용 연결, 행사 안내 등 다양한 혜택을 받으실 수 있습니다.</p>
+              <br>
+              <div class="notice-step">
+                하단의 <strong>동문 등록하기</strong> 버튼을 눌러 간단히 등록하실 수 있습니다. (약 3분 소요)
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="ncard reveal">
-        <div class="nthumb nt2">🏢</div>
-        <div class="nbody">
-          <div class="ncat">협약</div>
-          <div class="ntitle">협약 스튜디오 동문 할인 혜택 개시 예정</div>
-          <div class="ndate">2026년 4월~</div>
+
+      <!-- 오른쪽: 카테고리 + 갤러리 + 제보 -->
+      <div class="news-side">
+        <div class="ncat-card" onclick="alert('동문 동정 소식을 공식 메일로 제보해주세요.')">
+          <div class="ncat-card-inner"><div class="ncat-icon">🎤</div><div class="ncat-info"><div class="ncat-title">동문 동정</div><div class="ncat-desc">출간 · 앨범 · 공연 · 전시 소식</div></div></div>
         </div>
-      </div>
-      <div class="ncard reveal">
-        <div class="nthumb nt3">🌙</div>
-        <div class="nbody">
-          <div class="ncat">행사</div>
-          <div class="ntitle">학과 개설 30주년 기념 동문의 밤 개최 예정</div>
-          <div class="ndate">2026년 하반기</div>
+        <div class="ncat-card" onclick="alert('경조사 소식을 공식 메일로 제보해주세요.\n성함 / 기수 / 일시 / 장소 / 내용')">
+          <div class="ncat-card-inner"><div class="ncat-icon">🎊</div><div class="ncat-info"><div class="ncat-title">경조사</div><div class="ncat-desc">결혼 · 출생 · 개업 · 부고</div></div></div>
+        </div>
+        <div class="ncat-card" onclick="alert('분기별 동문인터뷰 및 동문회보는 준비 중입니다.')">
+          <div class="ncat-card-inner"><div class="ncat-icon">📰</div><div class="ncat-info"><div class="ncat-title">동문회보 · 인터뷰</div><div class="ncat-desc">분기별 발행 · 준비 중</div></div></div>
+        </div>
+        <div class="ncat-card" onclick="alert('학과 공식 소식은 추후 업데이트됩니다.')">
+          <div class="ncat-card-inner"><div class="ncat-icon">🏫</div><div class="ncat-info"><div class="ncat-title">학과 소식</div><div class="ncat-desc">모교와의 연결 유지</div></div></div>
+        </div>
+
+        <!-- 갤러리 프리뷰 -->
+        <div class="gallery-preview">
+          <h4>📸 갤러리</h4>
+          <div class="gallery-grid">
+            <div class="gallery-thumb">🎉</div>
+            <div class="gallery-thumb">🎵</div>
+            <div class="gallery-thumb">🥂</div>
+            <div class="gallery-empty" style="font-size:11px;color:var(--gray);padding:6px 0">2026 신년회 사진 업로드 예정</div>
+          </div>
+        </div>
+
+        <!-- 제보 안내 -->
+        <div class="news-submit">
+          <h4>📮 소식 제보하기</h4>
+          <p>동문 동정, 경조사, 공연·앨범 소식을 공식 메일로 보내주시면 홈페이지에 게재해드립니다.</p>
+          <a href="mailto:mutech.alumni@gmail.com">mutech.alumni@gmail.com</a>
         </div>
       </div>
     </div>
@@ -1095,48 +981,31 @@ footer{background:#060e1a;color:rgba(255,255,255,.32);padding:40px 48px}
   <div class="form-wrap">
     <div class="form-header">
       <div class="sec-tag">REGISTRATION</div>
-      <h2 class="sec-title">동문 & 재학생 등록</h2>
-      <div class="divider" style="margin:12px auto 16px"></div>
-      <p class="sec-sub">재학생은 무료 · 졸업생은 5분이면 완료 · 모든 정보는 동문회 운영 목적으로만 사용됩니다.</p>
+      <h2 class="sec-title">동문 등록</h2>
+      <div class="divider" style="margin:12px auto 14px"></div>
+      <p class="sec-sub">모든 정보는 동문회 운영 목적으로만 사용됩니다.</p>
     </div>
-
     <div class="gform" id="mainForm">
       <div class="form-progress">
         <div class="fp-step"><div class="fp-dot active" id="dot1">1</div><div class="fp-label active" id="lbl1">기본 정보</div></div>
         <div class="fp-line" id="line1"></div>
         <div class="fp-step"><div class="fp-dot" id="dot2">2</div><div class="fp-label" id="lbl2">학적 정보</div></div>
         <div class="fp-line" id="line2"></div>
-        <div class="fp-step"><div class="fp-dot" id="dot3">3</div><div class="fp-label" id="lbl3">현재 활동</div></div>
-        <div class="fp-line" id="line3"></div>
-        <div class="fp-step"><div class="fp-dot" id="dot4">4</div><div class="fp-label" id="lbl4">연구·협업</div></div>
-        <div class="fp-line" id="line4"></div>
-        <div class="fp-step"><div class="fp-dot" id="dot5">5</div><div class="fp-label" id="lbl5">참여 의향</div></div>
+        <div class="fp-step"><div class="fp-dot" id="dot3">3</div><div class="fp-label" id="lbl3">활동·완료</div></div>
       </div>
-
-      <!-- STEP 1 -->
       <div class="fstep active" id="step1">
         <div class="step-title">👤 기본 정보</div>
-        <div class="step-desc">재학생도 동일하게 등록합니다. 재학생은 연회비 없음.</div>
+        <div class="step-desc">필수 정보를 입력해주세요.</div>
         <div class="frow-2">
           <div class="frow"><label>이름 (실명) <span class="req">*</span></label><input type="text" placeholder="홍길동"></div>
           <div class="frow"><label>입학연도 <span class="req">*</span></label>
-            <select><option value="">선택하세요</option>
-              <script>for(let y=1996;y<=2026;y++)document.write(`<option>${y}년</option>`)</script>
-            </select></div>
+            <select><option value="">선택하세요</option><script>for(let y=1996;y<=2026;y++)document.write(`<option>${y}년</option>`)</script></select></div>
         </div>
         <div class="frow-2">
           <div class="frow"><label>이메일 <span class="req">*</span></label><input type="email" placeholder="example@email.com"></div>
           <div class="frow"><label>전화번호 <span class="opt">(선택)</span></label><input type="tel" placeholder="010-0000-0000"></div>
         </div>
-        <div class="frow"><label>재학생 / 졸업생 구분 <span class="req">*</span></label>
-          <div class="radio-group">
-            <div class="radio-item"><input type="radio" name="status" id="s1"><label for="s1">🎓 재학생 (무료)</label></div>
-            <div class="radio-item"><input type="radio" name="status" id="s2"><label for="s2">✅ 졸업생·수료생</label></div>
-          </div>
-        </div>
-        <div class="frow"><label>활동명 / 아티스트명 <span class="opt">(선택)</span></label>
-          <input type="text" placeholder="예: DJ Soundwave, 프로듀서 김민준"></div>
-        <div class="frow"><label>거주 / 활동 지역 <span class="req">*</span></label>
+        <div class="frow"><label>거주 / 활동 지역</label>
           <div class="radio-group">
             <div class="radio-item"><input type="radio" name="region" id="reg1"><label for="reg1">서울·수도권</label></div>
             <div class="radio-item"><input type="radio" name="region" id="reg2"><label for="reg2">지방 (국내)</label></div>
@@ -1145,8 +1014,6 @@ footer{background:#060e1a;color:rgba(255,255,255,.32);padding:40px 48px}
         </div>
         <div class="form-nav"><div></div><button class="btn-next" onclick="nextStep(1)">다음 단계 →</button></div>
       </div>
-
-      <!-- STEP 2 -->
       <div class="fstep" id="step2">
         <div class="step-title">🎓 학적 정보</div>
         <div class="step-desc">2020년 이전 입학생은 구 전공명으로 선택 가능합니다.</div>
@@ -1162,229 +1029,159 @@ footer{background:#060e1a;color:rgba(255,255,255,.32);padding:40px 48px}
             <div class="radio-item"><input type="radio" name="major" id="m2"><label for="m2">뮤직 퍼포먼스</label></div>
             <div class="radio-item"><input type="radio" name="major" id="m3"><label for="m3">오디오 테크놀로지</label></div>
             <div class="radio-item"><input type="radio" name="major" id="m4"><label for="m4">엔터테인먼트 비즈니스</label></div>
-            <div class="radio-item"><input type="radio" name="major" id="m5"><label for="m5">영상디지털음악 <small style="opacity:.5">(구)</small></label></div>
-            <div class="radio-item"><input type="radio" name="major" id="m6"><label for="m6">실용음악 <small style="opacity:.5">(구)</small></label></div>
-            <div class="radio-item"><input type="radio" name="major" id="m7"><label for="m7">레코딩 <small style="opacity:.5">(구)</small></label></div>
+            <div class="radio-item"><input type="radio" name="major" id="m5"><label for="m5">영상디지털음악 (구)</label></div>
+            <div class="radio-item"><input type="radio" name="major" id="m6"><label for="m6">실용음악 (구)</label></div>
+            <div class="radio-item"><input type="radio" name="major" id="m7"><label for="m7">레코딩 (구)</label></div>
           </div>
         </div>
-        <div class="frow"><label>졸업 형태 <span class="opt">(선택)</span></label>
-          <div class="radio-group">
-            <div class="radio-item"><input type="radio" name="gtype" id="gt1"><label for="gt1">📄 논문</label></div>
-            <div class="radio-item"><input type="radio" name="gtype" id="gt2"><label for="gt2">🎵 실기</label></div>
-            <div class="radio-item"><input type="radio" name="gtype" id="gt3"><label for="gt3">📝 실기+보고서</label></div>
-            <div class="radio-item"><input type="radio" name="gtype" id="gt4"><label for="gt4">재학 중</label></div>
-          </div>
-        </div>
-        <div class="frow"><label>논문·졸업작품 키워드 <span class="opt">(선택)</span></label>
-          <input type="text" placeholder="예: 영상음악, 사운드디자인, K-Pop 프로덕션, 보컬 퍼포먼스"></div>
         <div class="form-nav"><button class="btn-prev" onclick="prevStep(2)">← 이전</button><button class="btn-next" onclick="nextStep(2)">다음 →</button></div>
       </div>
-
-      <!-- STEP 3 -->
       <div class="fstep" id="step3">
         <div class="step-title">💼 현재 활동</div>
-        <div class="step-desc">재학생은 희망 분야를 선택해주세요.</div>
+        <div class="step-desc">현재 활동 분야를 알려주세요.</div>
         <div class="frow-2">
-          <div class="frow"><label>활동 유형 <span class="req">*</span></label>
+          <div class="frow"><label>활동 유형</label>
             <select><option value="">선택하세요</option>
               <option>프리랜서 / 1인 창작자</option><option>소속사·기획사</option>
               <option>스튜디오 운영</option><option>일반 기업</option>
-              <option>교육기관 (교수/강사)</option><option>창업 (대표)</option>
+              <option>교육기관</option><option>창업 (대표)</option>
               <option>재학·학업 중</option><option>기타</option></select></div>
-          <div class="frow"><label>소속명 / 직책 <span class="opt">(선택)</span></label>
-            <input type="text" placeholder="예: 프리랜서 작곡가, 재학생"></div>
-        </div>
-        <div class="frow"><label>주력 / 관심 활동 분야 <span class="req">*</span><span class="opt"> (복수)</span></label>
-          <div class="check-group">
-            <div class="check-item"><input type="checkbox" id="a1"><label for="a1">🎵 음악제작·프로듀싱</label></div>
-            <div class="check-item"><input type="checkbox" id="a2"><label for="a2">✍️ 작곡·편곡</label></div>
-            <div class="check-item"><input type="checkbox" id="a3"><label for="a3">🎤 보컬·퍼포먼스</label></div>
-            <div class="check-item"><input type="checkbox" id="a4"><label for="a4">🎛️ 레코딩·믹싱·마스터링</label></div>
-            <div class="check-item"><input type="checkbox" id="a5"><label for="a5">🎬 영상·광고·게임음악</label></div>
-            <div class="check-item"><input type="checkbox" id="a6"><label for="a6">🔊 사운드디자인</label></div>
-            <div class="check-item"><input type="checkbox" id="a7"><label for="a7">🎚️ 음향엔지니어링</label></div>
-            <div class="check-item"><input type="checkbox" id="a8"><label for="a8">📊 엔터테인먼트 기획</label></div>
-            <div class="check-item"><input type="checkbox" id="a9"><label for="a9">🎓 음악교육</label></div>
-            <div class="check-item"><input type="checkbox" id="a10"><label for="a10">🤖 AI·기술</label></div>
-            <div class="check-item"><input type="checkbox" id="a11"><label for="a11">💡 창업</label></div>
-            <div class="check-item"><input type="checkbox" id="a12"><label for="a12">기타</label></div>
-          </div>
-        </div>
-        <div class="frow"><label>주로 사용하는 DAW <span class="opt">(선택·복수)</span></label>
-          <div class="check-group">
-            <div class="check-item"><input type="checkbox" id="d1"><label for="d1">Ableton Live</label></div>
-            <div class="check-item"><input type="checkbox" id="d2"><label for="d2">Logic Pro</label></div>
-            <div class="check-item"><input type="checkbox" id="d3"><label for="d3">Pro Tools</label></div>
-            <div class="check-item"><input type="checkbox" id="d4"><label for="d4">Cubase</label></div>
-            <div class="check-item"><input type="checkbox" id="d5"><label for="d5">FL Studio</label></div>
-            <div class="check-item"><input type="checkbox" id="d6"><label for="d6">Studio One</label></div>
-            <div class="check-item"><input type="checkbox" id="d7"><label for="d7">Reaper</label></div>
-            <div class="check-item"><input type="checkbox" id="d8"><label for="d8">기타</label></div>
-          </div>
-        </div>
-        <div class="frow"><label>포트폴리오 / SNS <span class="opt">(선택)</span></label>
-          <input type="url" placeholder="https://"></div>
-        <div class="form-nav"><button class="btn-prev" onclick="prevStep(3)">← 이전</button><button class="btn-next" onclick="nextStep(3)">다음 →</button></div>
-      </div>
-
-      <!-- STEP 4 -->
-      <div class="fstep" id="step4">
-        <div class="step-title">🔬 연구 · 관심 · 협업</div>
-        <div class="step-desc">비슷한 관심사의 동문·재학생을 연결해드립니다. 여기서 협업이 시작됩니다.</div>
-        <div class="frow"><label>관심 / 연구 분야 <span class="opt">(복수)</span></label>
-          <div class="check-group">
-            <div class="check-item"><input type="checkbox" id="r1"><label for="r1">🎬 영상·미디어음악</label></div>
-            <div class="check-item"><input type="checkbox" id="r2"><label for="r2">🔊 사운드디자인·효과음</label></div>
-            <div class="check-item"><input type="checkbox" id="r3"><label for="r3">🎮 게임 사운드</label></div>
-            <div class="check-item"><input type="checkbox" id="r4"><label for="r4">🎛️ 레코딩·믹싱 기술</label></div>
-            <div class="check-item"><input type="checkbox" id="r5"><label for="r5">🎼 작곡·편곡 이론</label></div>
-            <div class="check-item"><input type="checkbox" id="r6"><label for="r6">🎤 보컬·퍼포먼스</label></div>
-            <div class="check-item"><input type="checkbox" id="r7"><label for="r7">📊 음악 비즈니스·저작권</label></div>
-            <div class="check-item"><input type="checkbox" id="r8"><label for="r8">🎓 음악교육학</label></div>
-            <div class="check-item"><input type="checkbox" id="r9"><label for="r9">🤖 AI·알고리즘 음악</label></div>
-            <div class="check-item"><input type="checkbox" id="r10"><label for="r10">🎹 신스·음향합성</label></div>
-            <div class="check-item"><input type="checkbox" id="r11"><label for="r11">🎺 공연·라이브사운드</label></div>
-            <div class="check-item"><input type="checkbox" id="r12"><label for="r12">🧠 음악심리·치료</label></div>
-          </div>
-        </div>
-        <div class="frow"><label>협업 희망 분야 <span class="opt">(복수)</span></label>
-          <div class="check-group">
-            <div class="check-item"><input type="checkbox" id="c1"><label for="c1">🎵 음악 제작 파트너</label></div>
-            <div class="check-item"><input type="checkbox" id="c2"><label for="c2">🎬 영상 작업</label></div>
-            <div class="check-item"><input type="checkbox" id="c3"><label for="c3">📚 교육 콘텐츠</label></div>
-            <div class="check-item"><input type="checkbox" id="c4"><label for="c4">🚀 창업·비즈니스</label></div>
-            <div class="check-item"><input type="checkbox" id="c5"><label for="c5">📝 연구·논문</label></div>
-            <div class="check-item"><input type="checkbox" id="c6"><label for="c6">🎤 공연 기획</label></div>
-            <div class="check-item"><input type="checkbox" id="c7"><label for="c7">🤖 AI 프로젝트</label></div>
-          </div>
-        </div>
-        <div class="frow"><label>현재 진행 중이거나 관심 있는 프로젝트 <span class="opt">(선택)</span></label>
-          <textarea placeholder="예: 단편영화 음악 작업 파트너를 찾고 있어요 / 음악교육 스타트업 공동창업자 모집 중 / 졸업작품 피드백 받고 싶어요..." style="min-height:100px;"></textarea></div>
-        <div class="frow"><label>내가 동문회에 기여할 수 있는 것 <span class="opt">(복수)</span></label>
-          <div class="check-group">
-            <div class="check-item"><input type="checkbox" id="g1"><label for="g1">🎙️ 강연·특강</label></div>
-            <div class="check-item"><input type="checkbox" id="g2"><label for="g2">🎚️ 스튜디오 제공</label></div>
-            <div class="check-item"><input type="checkbox" id="g3"><label for="g3">💰 후원·협찬</label></div>
-            <div class="check-item"><input type="checkbox" id="g4"><label for="g4">🎓 멘토링·레슨</label></div>
-            <div class="check-item"><input type="checkbox" id="g5"><label for="g5">📋 운영 참여</label></div>
-            <div class="check-item"><input type="checkbox" id="g6"><label for="g6">🤝 채용 연결</label></div>
-            <div class="check-item"><input type="checkbox" id="g7"><label for="g7">📸 홍보·디자인</label></div>
-          </div>
-        </div>
-        <div class="form-nav"><button class="btn-prev" onclick="prevStep(4)">← 이전</button><button class="btn-next" onclick="nextStep(4)">다음 →</button></div>
-      </div>
-
-      <!-- STEP 5 -->
-      <div class="fstep" id="step5">
-        <div class="step-title">🤝 동문회 참여 의향</div>
-        <div class="step-desc">마지막 단계입니다.</div>
-        <div class="frow"><label>멘토 활동 가능 여부</label>
-          <div class="radio-group">
-            <div class="radio-item"><input type="radio" name="mentor" id="men1"><label for="men1">✅ 지금 가능</label></div>
-            <div class="radio-item"><input type="radio" name="mentor" id="men2"><label for="men2">🕐 추후 가능</label></div>
-            <div class="radio-item"><input type="radio" name="mentor" id="men3"><label for="men3">🙏 어렵습니다</label></div>
-          </div>
-        </div>
-        <div class="frow"><label>관심 있는 혜택 <span class="opt">(복수)</span></label>
-          <div class="check-group">
-            <div class="check-item"><input type="checkbox" id="h1"><label for="h1">동문 네트워킹</label></div>
-            <div class="check-item"><input type="checkbox" id="h2"><label for="h2">스튜디오 할인</label></div>
-            <div class="check-item"><input type="checkbox" id="h3"><label for="h3">세미나·특강</label></div>
-            <div class="check-item"><input type="checkbox" id="h4"><label for="h4">채용·협업 정보</label></div>
-            <div class="check-item"><input type="checkbox" id="h5"><label for="h5">법무·세무 지원</label></div>
-            <div class="check-item"><input type="checkbox" id="h6"><label for="h6">멘토링</label></div>
-            <div class="check-item"><input type="checkbox" id="h7"><label for="h7">선배 커피챗</label></div>
-            <div class="check-item"><input type="checkbox" id="h8"><label for="h8">행사·공연 초대</label></div>
-          </div>
-        </div>
-        <div class="frow"><label>동문회 활동 참여 희망도</label>
-          <div class="scale-group">
-            <div class="scale-lbl">낮음</div>
-            <div class="scale-dots">
-              <div class="scale-item"><input type="radio" name="engage" id="e1"><label for="e1">1</label></div>
-              <div class="scale-item"><input type="radio" name="engage" id="e2"><label for="e2">2</label></div>
-              <div class="scale-item"><input type="radio" name="engage" id="e3"><label for="e3">3</label></div>
-              <div class="scale-item"><input type="radio" name="engage" id="e4"><label for="e4">4</label></div>
-              <div class="scale-item"><input type="radio" name="engage" id="e5"><label for="e5">5</label></div>
-            </div>
-            <div class="scale-lbl">높음</div>
-          </div>
-        </div>
-        <div class="frow"><label>개인정보 공개 범위 <span class="req">*</span></label>
-          <div class="radio-group">
-            <div class="radio-item"><input type="radio" name="priv" id="p1"><label for="p1">🌐 동문 전체 공개</label></div>
-            <div class="radio-item"><input type="radio" name="priv" id="p2"><label for="p2">👁️ 이름·분야만</label></div>
-            <div class="radio-item"><input type="radio" name="priv" id="p3"><label for="p3">🔒 운영진만</label></div>
-          </div>
+          <div class="frow"><label>소속명 <span class="opt">(선택)</span></label><input type="text" placeholder="예: 프리랜서 작곡가"></div>
         </div>
         <div class="frow"><label>동문회에 바라는 점 <span class="opt">(자유롭게)</span></label>
-          <textarea placeholder="기대하는 것, 제안, 궁금한 점 무엇이든요..." style="min-height:75px;"></textarea></div>
-        <div class="frow">
-          <div class="check-item" style="width:100%">
-            <input type="checkbox" id="agree">
-            <label for="agree" style="font-size:11.5px;color:rgba(255,255,255,.4);font-weight:400;letter-spacing:0;text-transform:none;line-height:1.6;">수집된 개인정보는 동문회 운영 목적으로만 활용되며, 동문 본인의 동의 없이 제3자에게 제공되지 않습니다. <span style="color:var(--gold-l)">[개인정보 수집·이용에 동의합니다]</span></label>
-          </div>
+          <textarea placeholder="기대, 제안, 궁금한 점 무엇이든요..." style="min-height:70px;"></textarea></div>
+        <div class="frow" style="margin-top:8px">
+          <input type="checkbox" id="agree" style="margin-right:8px;accent-color:var(--gold)">
+          <label for="agree" style="display:inline;font-size:11.5px;color:rgba(255,255,255,.4);font-weight:400;letter-spacing:0;text-transform:none;line-height:1.6;cursor:pointer">
+            수집된 개인정보는 동문회 운영 목적으로만 활용됩니다. <span style="color:var(--gold-l)">[동의합니다]</span>
+          </label>
         </div>
         <div class="form-nav">
-          <button class="btn-prev" onclick="prevStep(5)">← 이전</button>
+          <button class="btn-prev" onclick="prevStep(3)">← 이전</button>
           <button class="btn-submit" onclick="submitForm()">🎵 등록 완료하기</button>
         </div>
       </div>
-
       <div class="form-success" id="successMsg">
         <div class="success-icon">✓</div>
         <h3>등록이 완료되었습니다!</h3>
-        <p>함께해 주셔서 감사합니다.<br>48시간 내로 동문 커뮤니티 초대 링크와 혜택 안내를<br>이메일로 보내드립니다.<br><br>
+        <p>함께해 주셔서 감사합니다.<br>동문 커뮤니티 초대 링크와 혜택 안내를 이메일로 보내드립니다.<br><br>
         <span style="color:var(--gold-l);font-weight:700;">상명대 뮤직테크놀로지 총동문회 🎵</span></p>
       </div>
-      <p class="form-note" id="formNote">✦ 약 5분 소요 · 개인정보는 동문회 운영 목적으로만 사용됩니다</p>
+      <p class="form-note-f" id="formNote">✦ 개인정보는 동문회 운영 목적으로만 사용됩니다</p>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
 <section class="cta">
   <div style="position:relative">
-    <h2>1996년부터 2026년까지,<br>30년의 첫 동문회</h2>
-    <p>창립 멤버는 영구히 기록됩니다. 지금 함께하세요.</p>
+    <h2>1996년부터 2026년까지,<br>30년의 첫 공식 동문회</h2>
+    <p>지금 함께하세요. 동문 여러분을 기다립니다.</p>
     <a href="#join" class="btn-gold">🎼 동문 등록하기</a>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-in">
     <div>
       <div class="footer-logo">상명대 <span>뮤직테크놀로지</span> 총동문회</div>
-      <div class="footer-sub">Sangmyung University Music Technology Alumni Association · Est. 2026 · Since 1996</div>
+      <div class="footer-sub">Sangmyung University Music Technology Alumni Association · Est. 2024 · Since 1996</div>
     </div>
     <div class="footer-links">
-      <a href="#">이용약관</a><a href="#">개인정보처리방침</a>
-      <a href="#join">동문 등록</a><a href="#fund">발전기금</a><a href="#">문의</a>
+      <a href="#">회칙</a><a href="#">개인정보처리방침</a><a href="#join">동문 등록</a><a href="#">공식 메일</a>
     </div>
     <div>© 2026 상명대 뮤직테크놀로지 총동문회</div>
   </div>
 </footer>
 
+<!-- 동문기업 모달 -->
+<div class="modal-overlay" id="bizModal" onclick="closeBizModal(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="document.getElementById('bizModal').classList.remove('open')">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
 <script>
+// 공지 토글
+function toggleNotice(id) {
+  const el = document.getElementById(id);
+  const isOpen = el.classList.contains('open');
+  document.querySelectorAll('.notice-detail').forEach(d => d.classList.remove('open'));
+  if (!isOpen) el.classList.add('open');
+}
+
+// 동문기업 데이터
+const bizData = [
+  {name:'아트앤피플컴퍼니',owner:'최영신',major:'석사/영디음 · 박사/뮤텍',type:'예술 콘텐츠 제작 및 교육프로그램 개발',addr:'서울시 서초구 방배로 42길 35, 202호',site:'',benefit:'동문 또는 동문가족 클래스 10% 할인'},
+  {name:'조율뮤직앤아트 / 조율뮤직앤아트학원',owner:'조유리',major:'박사/보컬',type:'보컬스튜디오 · 실용음악학원',addr:'서울 강서구 (2개소)',site:'',benefit:'동문 또는 동문가족 10% 할인'},
+  {name:'킨치보컬아카데미',owner:'최순천 · 이나경',major:'석사/보컬 · 석박/보컬',type:'보컬학원',addr:'경기도 고양시 덕양구 무원로6번길 20, 엠타워 405호',site:'',benefit:'동문 가족 및 지인 등록 첫 달 20% 할인'},
+  {name:'㈜합동전자산업',owner:'정현',major:'석사/보컬',type:'방송·음향기기 개발·제조·유통·시공 (안내 및 비상방송 시스템 개발)',addr:'서울특별시 영등포구 양산로 9',site:'www.digipax.co.kr',benefit:'도매·업체 공급가 유통 및 시공'},
+  {name:'상명피아노음악교습소',owner:'정민혜',major:'석사/프로덕션',type:'교육서비스업',addr:'인천시 서구 완정로 65번길 10, 2층',site:'',benefit:'연습실 이용 지원 · 클래식 및 전문 악기 교육 관련 강사/전문가 매칭 및 컨택 지원'},
+  {name:'가혜보컬 & 음악연습실',owner:'정가혜',major:'석사/보컬',type:'보컬학원 · 연습실 대여',addr:'경기도 화성시 남양읍 남양시장로 66번길 3-14 1층',site:'인스타그램 @kahye_vocal',benefit:'시간제 연습실 대여료 무료 · 월대여 20% 할인 쿠폰 증정'},
+];
+
+function openBiz(i) {
+  const b = bizData[i];
+  document.getElementById('modalContent').innerHTML = `
+    <h2>${b.name}</h2>
+    <span class="modal-tag">동문기업</span>
+    <div class="modal-divider"></div>
+    <div class="modal-row"><span class="ml">대표 동문</span><span class="mv">${b.owner}</span></div>
+    <div class="modal-row"><span class="ml">전공</span><span class="mv">${b.major}</span></div>
+    <div class="modal-row"><span class="ml">업종</span><span class="mv">${b.type}</span></div>
+    <div class="modal-row"><span class="ml">주소</span><span class="mv">${b.addr}</span></div>
+    ${b.site ? `<div class="modal-row"><span class="ml">홈페이지</span><span class="mv"><a href="http://${b.site}" style="color:var(--accent)">${b.site}</a></span></div>` : ''}
+    <div class="modal-benefit"><div class="mb-label">🎁 동문 특별 혜택</div><div class="mb-val">${b.benefit}</div></div>
+  `;
+  document.getElementById('bizModal').classList.add('open');
+}
+function closeBizModal(e) {
+  if (e.target === document.getElementById('bizModal')) document.getElementById('bizModal').classList.remove('open');
+}
+
+// 탭 전환
+function switchTab(id) {
+  document.querySelectorAll('.act-tab').forEach((t,i) => {
+    const ids = ['biz','portfolio','consult','jobs'];
+    t.classList.toggle('active', ids[i] === id);
+  });
+  document.querySelectorAll('.act-tab-content').forEach(c => c.classList.remove('active'));
+  document.getElementById('tab-'+id).classList.add('active');
+}
+
+// 내부 폼 제출
+function submitInnerForm(successId) {
+  document.getElementById(successId).classList.add('show');
+}
+
+// 구인구직 폼 토글
+function toggleJobForm() {
+  const f = document.getElementById('jobPostForm');
+  f.classList.toggle('open');
+}
+function submitJobPost() {
+  document.getElementById('job-success').classList.add('show');
+  setTimeout(() => document.getElementById('jobPostForm').classList.remove('open'), 2000);
+}
+
+// 등록 폼
 function updateProgress(s){
-  for(let i=1;i<=5;i++){
+  for(let i=1;i<=3;i++){
     const d=document.getElementById('dot'+i),l=document.getElementById('lbl'+i);
     d.classList.remove('active','done');l.classList.remove('active');
     if(i<s){d.classList.add('done');d.innerHTML='✓';}
     else if(i===s){d.classList.add('active');d.innerHTML=i;l.classList.add('active');}
     else d.innerHTML=i;
   }
-  for(let i=1;i<5;i++)document.getElementById('line'+i).classList.toggle('done',i<s);
+  for(let i=1;i<3;i++)document.getElementById('line'+i).classList.toggle('done',i<s);
 }
 function showStep(s){
   document.querySelectorAll('.fstep').forEach(x=>x.classList.remove('active'));
-  const el=document.getElementById('step'+s);
-  if(el)el.classList.add('active');
+  document.getElementById('step'+s).classList.add('active');
   updateProgress(s);
   document.getElementById('mainForm').scrollIntoView({behavior:'smooth',block:'start'});
 }
-function nextStep(f){if(f<5)showStep(f+1);}
+function nextStep(f){if(f<3)showStep(f+1);}
 function prevStep(f){if(f>1)showStep(f-1);}
 function submitForm(){
   if(!document.getElementById('agree').checked){alert('개인정보 수집·이용에 동의해주세요.');return;}
@@ -1393,15 +1190,14 @@ function submitForm(){
   document.getElementById('formNote').style.display='none';
   document.getElementById('successMsg').classList.add('show');
 }
+
+// 스크롤 애니메이션
 const obs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});
 },{threshold:.08,rootMargin:'0px 0px -40px 0px'});
-document.querySelectorAll('.reveal').forEach((el,i)=>{
-  el.style.transitionDelay=(i%4)*.07+'s';obs.observe(el);
-});
+document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%4)*.07+'s';obs.observe(el);});
 window.addEventListener('scroll',()=>{
-  document.getElementById('topnav').style.boxShadow=
-    window.scrollY>60?'0 4px 28px rgba(0,0,0,.4)':'none';
+  document.getElementById('topnav').style.boxShadow=window.scrollY>60?'0 4px 28px rgba(0,0,0,.4)':'none';
 });
 </script>
 </body>
